@@ -17,7 +17,7 @@ namespace SistemaOficina
         public override string ToString()
         {
           
-            return $"{Nome, -20} - {Email, -25} = {Telefone, -15}";
+            return $"{Nome, -20} | {Email, -25} | {Telefone, -15}";
         }
 
 
