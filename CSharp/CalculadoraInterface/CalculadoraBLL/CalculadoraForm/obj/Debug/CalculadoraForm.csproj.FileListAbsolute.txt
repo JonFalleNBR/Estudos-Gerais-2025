@@ -2,9 +2,9 @@ C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estu
 C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\CalculadoraInterface\CalculadoraBLL\CalculadoraForm\bin\Debug\CalculadoraForm.exe
 C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\CalculadoraInterface\CalculadoraBLL\CalculadoraForm\bin\Debug\CalculadoraForm.pdb
 C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\CalculadoraInterface\CalculadoraBLL\CalculadoraForm\obj\Debug\CalculadoraForm.csproj.AssemblyReference.cache
-C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\CalculadoraInterface\CalculadoraBLL\CalculadoraForm\obj\Debug\CalculadoraForm.Form1.resources
 C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\CalculadoraInterface\CalculadoraBLL\CalculadoraForm\obj\Debug\CalculadoraForm.Properties.Resources.resources
 C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\CalculadoraInterface\CalculadoraBLL\CalculadoraForm\obj\Debug\CalculadoraForm.csproj.GenerateResource.cache
 C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\CalculadoraInterface\CalculadoraBLL\CalculadoraForm\obj\Debug\CalculadoraForm.csproj.CoreCompileInputs.cache
 C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\CalculadoraInterface\CalculadoraBLL\CalculadoraForm\obj\Debug\CalculadoraForm.exe
 C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\CalculadoraInterface\CalculadoraBLL\CalculadoraForm\obj\Debug\CalculadoraForm.pdb
+C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\CalculadoraInterface\CalculadoraBLL\CalculadoraForm\obj\Debug\CalculadoraForm.Calculadora.resources

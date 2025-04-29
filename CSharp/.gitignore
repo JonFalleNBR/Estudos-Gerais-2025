@@ -1,0 +1,42 @@
+# Pasta do Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Binários
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.zip
+
+# Diretórios de publicação
+publish/
+
+# Arquivos temporários
+*.log
+*.tmp
+
+# Configurações locais
+*.dbmdl
+*.jfm
+*.vscode/
+*.ncb
+*.opendb
+*.sdf
+*.sqlite
+
+# Arquivos do Copilot (índices locais)
+.vs/**/CopilotIndices/
+
+# Outros
+Thumbs.db
+Desktop.ini
+
+# Arquivos gerados pelo build
+*.Build.cs
+*.Build.cs.*

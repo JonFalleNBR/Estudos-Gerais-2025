@@ -1,6 +1,6 @@
 ﻿namespace CalculadoraForm
 {
-    partial class Form1
+    partial class Calculadora
     {
         /// <summary>
         /// Required designer variable.
@@ -49,12 +49,14 @@
             // 
             // btnOne
             // 
+            this.btnOne.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnOne.Location = new System.Drawing.Point(27, 128);
             this.btnOne.Name = "btnOne";
             this.btnOne.Size = new System.Drawing.Size(75, 67);
             this.btnOne.TabIndex = 0;
             this.btnOne.Text = "1";
-            this.btnOne.UseVisualStyleBackColor = true;
+            this.btnOne.UseVisualStyleBackColor = false;
+            this.btnOne.Click += new System.EventHandler(this.btnNumero_Click);
             // 
             // btnTwo
             // 
@@ -64,6 +66,7 @@
             this.btnTwo.TabIndex = 1;
             this.btnTwo.Text = "2";
             this.btnTwo.UseVisualStyleBackColor = true;
+            this.btnTwo.Click += new System.EventHandler(this.btnNumero_Click);
             // 
             // btnThree
             // 
@@ -73,6 +76,7 @@
             this.btnThree.TabIndex = 2;
             this.btnThree.Text = "3";
             this.btnThree.UseVisualStyleBackColor = true;
+            this.btnThree.Click += new System.EventHandler(this.btnNumero_Click);
             // 
             // txtFour
             // 
@@ -82,6 +86,7 @@
             this.txtFour.TabIndex = 4;
             this.txtFour.Text = "4";
             this.txtFour.UseVisualStyleBackColor = true;
+            this.txtFour.Click += new System.EventHandler(this.btnNumero_Click);
             // 
             // btnFive
             // 
@@ -91,6 +96,7 @@
             this.btnFive.TabIndex = 5;
             this.btnFive.Text = "5";
             this.btnFive.UseVisualStyleBackColor = true;
+            this.btnFive.Click += new System.EventHandler(this.btnNumero_Click);
             // 
             // btnSix
             // 
@@ -100,6 +106,7 @@
             this.btnSix.TabIndex = 6;
             this.btnSix.Text = "6";
             this.btnSix.UseVisualStyleBackColor = true;
+            this.btnSix.Click += new System.EventHandler(this.btnNumero_Click);
             // 
             // btnSeven
             // 
@@ -109,6 +116,7 @@
             this.btnSeven.TabIndex = 7;
             this.btnSeven.Text = "7";
             this.btnSeven.UseVisualStyleBackColor = true;
+            this.btnSeven.Click += new System.EventHandler(this.btnNumero_Click);
             // 
             // btnEight
             // 
@@ -118,6 +126,7 @@
             this.btnEight.TabIndex = 8;
             this.btnEight.Text = "8";
             this.btnEight.UseVisualStyleBackColor = true;
+            this.btnEight.Click += new System.EventHandler(this.btnNumero_Click);
             // 
             // btnNine
             // 
@@ -127,6 +136,7 @@
             this.btnNine.TabIndex = 9;
             this.btnNine.Text = "9";
             this.btnNine.UseVisualStyleBackColor = true;
+            this.btnNine.Click += new System.EventHandler(this.btnNumero_Click);
             // 
             // btnZero
             // 
@@ -136,6 +146,7 @@
             this.btnZero.TabIndex = 10;
             this.btnZero.Text = "0";
             this.btnZero.UseVisualStyleBackColor = true;
+            this.btnZero.Click += new System.EventHandler(this.btnNumero_Click);
             // 
             // btnCalc
             // 
@@ -145,6 +156,7 @@
             this.btnCalc.TabIndex = 11;
             this.btnCalc.Text = "=";
             this.btnCalc.UseVisualStyleBackColor = true;
+            this.btnCalc.Click += new System.EventHandler(this.btnIgual_Click);
             // 
             // btnClear
             // 
@@ -154,6 +166,7 @@
             this.btnClear.TabIndex = 12;
             this.btnClear.Text = "C";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnSoma
             // 
@@ -163,6 +176,7 @@
             this.btnSoma.TabIndex = 13;
             this.btnSoma.Text = "+";
             this.btnSoma.UseVisualStyleBackColor = true;
+            this.btnSoma.Click += new System.EventHandler(this.btnOperador);
             // 
             // btnSub
             // 
@@ -172,6 +186,7 @@
             this.btnSub.TabIndex = 14;
             this.btnSub.Text = "-";
             this.btnSub.UseVisualStyleBackColor = true;
+            this.btnSub.Click += new System.EventHandler(this.btnOperador);
             // 
             // btnMulti
             // 
@@ -181,6 +196,7 @@
             this.btnMulti.TabIndex = 15;
             this.btnMulti.Text = "X";
             this.btnMulti.UseVisualStyleBackColor = true;
+            this.btnMulti.Click += new System.EventHandler(this.btnOperador);
             // 
             // btnDivide
             // 
@@ -190,20 +206,22 @@
             this.btnDivide.TabIndex = 16;
             this.btnDivide.Text = "/";
             this.btnDivide.UseVisualStyleBackColor = true;
+            this.btnDivide.Click += new System.EventHandler(this.btnOperador);
             // 
             // PainelOperacao
             // 
-            this.PainelOperacao.FormattingEnabled = true;
+            this.PainelOperacao.BackColor = System.Drawing.SystemColors.Info;
             this.PainelOperacao.ItemHeight = 16;
-            this.PainelOperacao.Location = new System.Drawing.Point(27, 28);
+            this.PainelOperacao.Location = new System.Drawing.Point(27, 6);
             this.PainelOperacao.Name = "PainelOperacao";
-            this.PainelOperacao.Size = new System.Drawing.Size(354, 84);
-            this.PainelOperacao.TabIndex = 17;
+            this.PainelOperacao.Size = new System.Drawing.Size(354, 116);
+            this.PainelOperacao.TabIndex = 0;
             // 
-            // Form1
+            // Calculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(393, 477);
             this.Controls.Add(this.PainelOperacao);
             this.Controls.Add(this.btnDivide);
@@ -222,8 +240,10 @@
             this.Controls.Add(this.btnThree);
             this.Controls.Add(this.btnTwo);
             this.Controls.Add(this.btnOne);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Name = "Calculadora";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Calculadora";
             this.ResumeLayout(false);
 
         }
