@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Jonathan\\OneDrive\\\u00C1rea de Trabalho\\Dev\\ManipularStrings\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDEE65A-209E-428D-8CA8-730B34EBC8B1}|ManipulacaoStringsForms\\ManipulacaoStringsForms.csproj|c:\\users\\jonathan\\onedrive\\\u00E1rea de trabalho\\dev\\manipularstrings\\manipulacaostringsforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EDEE65A-209E-428D-8CA8-730B34EBC8B1}|ManipulacaoStringsForms\\ManipulacaoStringsForms.csproj|solutionrelative:manipulacaostringsforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDEE65A-209E-428D-8CA8-730B34EBC8B1}|ManipulacaoStringsForms\\ManipulacaoStringsForms.csproj|C:\\Users\\Jonathan\\OneDrive\\\u00C1rea de Trabalho\\Dev\\ManipularStrings\\manipulacaostringsforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4EDEE65A-209E-428D-8CA8-730B34EBC8B1}|ManipulacaoStringsForms\\ManipulacaoStringsForms.csproj|solutionrelative:manipulacaostringsforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5E93AA4-8CFD-44E9-AF6A-42440D220FE2}|ManipularStrings\\ManipularStrings.csproj|C:\\Users\\Jonathan\\OneDrive\\\u00C1rea de Trabalho\\Dev\\ManipularStrings\\manipularstrings\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5E93AA4-8CFD-44E9-AF6A-42440D220FE2}|ManipularStrings\\ManipularStrings.csproj|solutionrelative:manipularstrings\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Jonathan\\OneDrive\\\u00C1rea de Trabalho\\Dev\\ManipularStrings\\ManipulacaoStringsForms\\Form1.cs",
+              "RelativeDocumentMoniker": "ManipulacaoStringsForms\\Form1.cs",
+              "ToolTip": "C:\\Users\\Jonathan\\OneDrive\\\u00C1rea de Trabalho\\Dev\\ManipularStrings\\ManipulacaoStringsForms\\Form1.cs",
+              "RelativeToolTip": "ManipulacaoStringsForms\\Form1.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAswEMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T23:18:41.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Jonathan\\OneDrive\\\u00C1rea de Trabalho\\Dev\\ManipularStrings\\ManipulacaoStringsForms\\Form1.cs",
+              "RelativeDocumentMoniker": "ManipulacaoStringsForms\\Form1.cs",
+              "ToolTip": "C:\\Users\\Jonathan\\OneDrive\\\u00C1rea de Trabalho\\Dev\\ManipularStrings\\ManipulacaoStringsForms\\Form1.cs [Design]",
+              "RelativeToolTip": "ManipulacaoStringsForms\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T23:16:22.119Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Jonathan\\OneDrive\\\u00C1rea de Trabalho\\Dev\\ManipularStrings\\ManipularStrings\\Program.cs",
+              "RelativeDocumentMoniker": "ManipularStrings\\Program.cs",
+              "ToolTip": "C:\\Users\\Jonathan\\OneDrive\\\u00C1rea de Trabalho\\Dev\\ManipularStrings\\ManipularStrings\\Program.cs",
+              "RelativeToolTip": "ManipularStrings\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T23:15:18.762Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

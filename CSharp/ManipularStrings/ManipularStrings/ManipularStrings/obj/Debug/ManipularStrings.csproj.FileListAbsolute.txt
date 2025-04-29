@@ -1,0 +1,7 @@
+C:\Users\Jonathan\OneDrive\Área de Trabalho\Dev\ManipularStrings\ManipularStrings\bin\Debug\ManipularStrings.exe.config
+C:\Users\Jonathan\OneDrive\Área de Trabalho\Dev\ManipularStrings\ManipularStrings\bin\Debug\ManipularStrings.exe
+C:\Users\Jonathan\OneDrive\Área de Trabalho\Dev\ManipularStrings\ManipularStrings\bin\Debug\ManipularStrings.pdb
+C:\Users\Jonathan\OneDrive\Área de Trabalho\Dev\ManipularStrings\ManipularStrings\obj\Debug\ManipularStrings.csproj.AssemblyReference.cache
+C:\Users\Jonathan\OneDrive\Área de Trabalho\Dev\ManipularStrings\ManipularStrings\obj\Debug\ManipularStrings.csproj.CoreCompileInputs.cache
+C:\Users\Jonathan\OneDrive\Área de Trabalho\Dev\ManipularStrings\ManipularStrings\obj\Debug\ManipularStrings.exe
+C:\Users\Jonathan\OneDrive\Área de Trabalho\Dev\ManipularStrings\ManipularStrings\obj\Debug\ManipularStrings.pdb
