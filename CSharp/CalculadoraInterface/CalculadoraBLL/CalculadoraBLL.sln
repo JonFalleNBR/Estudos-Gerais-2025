@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraBLL", "CalculadoraBLL\CalculadoraBLL.csproj", "{535C09B5-817B-4483-ABBC-A57284AD8DC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraForm", "CalculadoraForm\CalculadoraForm.csproj", "{616D34AD-A3EE-46A2-A30F-AFBECCD70B96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{535C09B5-817B-4483-ABBC-A57284AD8DC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{535C09B5-817B-4483-ABBC-A57284AD8DC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{535C09B5-817B-4483-ABBC-A57284AD8DC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{535C09B5-817B-4483-ABBC-A57284AD8DC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{616D34AD-A3EE-46A2-A30F-AFBECCD70B96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{616D34AD-A3EE-46A2-A30F-AFBECCD70B96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{616D34AD-A3EE-46A2-A30F-AFBECCD70B96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{616D34AD-A3EE-46A2-A30F-AFBECCD70B96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
