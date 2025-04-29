@@ -82,8 +82,28 @@ namespace ManipulacaoStringsForms
                                                   // Isso é muito util para fazer buscas dentro de strings, uma vez que ele irá
                                                   // retornar a posição do primeiro caracter da string "ilv" dentro da string "nome"
 
-            label1.Text = "indice: " + indice2.ToString(); // Retorna a posição do primeiro caracter da string "da" dentro da string "nome"
+            //label1.Text = "indice: " + indice2.ToString(); // Retorna a posição do primeiro caracter da string "da" dentro da string "nome"
 
+
+
+            int indice3 = nome.IndexOf("ilv", 4, 3); // Ele irá procurar o ilv apenas após o indice 4, tal qual o de cima, porem, defini aqui tambem que ele
+            //percorra apenas 3 caracteres, ou seja, ele irá retornar -1, uma vez que o ilv não existe dentro da string "nome" após o indice 4
+            // Esse exemplo é muito util para buscar de strings em um texto maior, e , apenas x caracteres, como 11 para cpf ,etc
+            //label1.Text = "indice: " + indice3.ToString();
+
+            //Nesse cenario ele não irá encontrar o ilv, uma vez que ele não existe dentro da string "nome" após o indice 4
+
+
+            string nome2 = "Jonathan Lopes";
+
+            int indice4 = nome2.LastIndexOf("o"); // Retorna a ultima ocorrencia da string "da" dentro da string "nome"
+                                                 // Nesse caso ele irá retornar o segundo "o" do nome "Jonathan Lopes"
+            label1.Text = "indice: " + indice4.ToString();
+
+
+            // IndexOf busca a primeira ocorrencai de um caracter dentro de uma string
+            // LastIndexOf busca a ultima ocorrencia de um caracter dentro de uma string 
+           
             #endregion
 
         }

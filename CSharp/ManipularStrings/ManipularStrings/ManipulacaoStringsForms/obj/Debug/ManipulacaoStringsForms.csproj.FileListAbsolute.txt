@@ -8,3 +8,13 @@ C:\Users\Jonathan\OneDrive\Área de Trabalho\Dev\ManipularStrings\ManipulacaoStr
 C:\Users\Jonathan\OneDrive\Área de Trabalho\Dev\ManipularStrings\ManipulacaoStringsForms\obj\Debug\ManipulacaoStringsForms.csproj.CoreCompileInputs.cache
 C:\Users\Jonathan\OneDrive\Área de Trabalho\Dev\ManipularStrings\ManipulacaoStringsForms\obj\Debug\ManipulacaoStringsForms.exe
 C:\Users\Jonathan\OneDrive\Área de Trabalho\Dev\ManipularStrings\ManipulacaoStringsForms\obj\Debug\ManipulacaoStringsForms.pdb
+C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\ManipularStrings\ManipularStrings\ManipulacaoStringsForms\bin\Debug\ManipulacaoStringsForms.exe.config
+C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\ManipularStrings\ManipularStrings\ManipulacaoStringsForms\bin\Debug\ManipulacaoStringsForms.exe
+C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\ManipularStrings\ManipularStrings\ManipulacaoStringsForms\bin\Debug\ManipulacaoStringsForms.pdb
+C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\ManipularStrings\ManipularStrings\ManipulacaoStringsForms\obj\Debug\ManipulacaoStringsForms.csproj.AssemblyReference.cache
+C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\ManipularStrings\ManipularStrings\ManipulacaoStringsForms\obj\Debug\ManipulacaoStringsForms.Form1.resources
+C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\ManipularStrings\ManipularStrings\ManipulacaoStringsForms\obj\Debug\ManipulacaoStringsForms.Properties.Resources.resources
+C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\ManipularStrings\ManipularStrings\ManipulacaoStringsForms\obj\Debug\ManipulacaoStringsForms.csproj.GenerateResource.cache
+C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\ManipularStrings\ManipularStrings\ManipulacaoStringsForms\obj\Debug\ManipulacaoStringsForms.csproj.CoreCompileInputs.cache
+C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\ManipularStrings\ManipularStrings\ManipulacaoStringsForms\obj\Debug\ManipulacaoStringsForms.exe
+C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\ManipularStrings\ManipularStrings\ManipulacaoStringsForms\obj\Debug\ManipulacaoStringsForms.pdb
