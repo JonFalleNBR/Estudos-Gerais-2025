@@ -1,7 +1,0 @@
-C:\Users\Jonathan\OneDrive\Área de Trabalho\Curso Intensivo C# .NET\Ciclos-Repeticao\Sequencia_Fibonnaci\bin\Debug\Sequencia_Fibonnaci.exe.config
-C:\Users\Jonathan\OneDrive\Área de Trabalho\Curso Intensivo C# .NET\Ciclos-Repeticao\Sequencia_Fibonnaci\bin\Debug\Sequencia_Fibonnaci.exe
-C:\Users\Jonathan\OneDrive\Área de Trabalho\Curso Intensivo C# .NET\Ciclos-Repeticao\Sequencia_Fibonnaci\bin\Debug\Sequencia_Fibonnaci.pdb
-C:\Users\Jonathan\OneDrive\Área de Trabalho\Curso Intensivo C# .NET\Ciclos-Repeticao\Sequencia_Fibonnaci\obj\Debug\Sequencia_Fibonnaci.csproj.AssemblyReference.cache
-C:\Users\Jonathan\OneDrive\Área de Trabalho\Curso Intensivo C# .NET\Ciclos-Repeticao\Sequencia_Fibonnaci\obj\Debug\Sequencia_Fibonnaci.csproj.CoreCompileInputs.cache
-C:\Users\Jonathan\OneDrive\Área de Trabalho\Curso Intensivo C# .NET\Ciclos-Repeticao\Sequencia_Fibonnaci\obj\Debug\Sequencia_Fibonnaci.exe
-C:\Users\Jonathan\OneDrive\Área de Trabalho\Curso Intensivo C# .NET\Ciclos-Repeticao\Sequencia_Fibonnaci\obj\Debug\Sequencia_Fibonnaci.pdb

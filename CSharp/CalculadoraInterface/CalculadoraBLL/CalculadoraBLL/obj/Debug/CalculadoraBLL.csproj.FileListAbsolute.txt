@@ -1,7 +1,0 @@
-C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\CalculadoraInterface\CalculadoraBLL\CalculadoraBLL\bin\Debug\CalculadoraBLL.exe.config
-C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\CalculadoraInterface\CalculadoraBLL\CalculadoraBLL\bin\Debug\CalculadoraBLL.exe
-C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\CalculadoraInterface\CalculadoraBLL\CalculadoraBLL\bin\Debug\CalculadoraBLL.pdb
-C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\CalculadoraInterface\CalculadoraBLL\CalculadoraBLL\obj\Debug\CalculadoraBLL.csproj.AssemblyReference.cache
-C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\CalculadoraInterface\CalculadoraBLL\CalculadoraBLL\obj\Debug\CalculadoraBLL.csproj.CoreCompileInputs.cache
-C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\CalculadoraInterface\CalculadoraBLL\CalculadoraBLL\obj\Debug\CalculadoraBLL.exe
-C:\Users\Jonathan\OneDrive\Área de Trabalho\projetos-estudos-2025\projetos-estudos-2025\CSharp\CalculadoraInterface\CalculadoraBLL\CalculadoraBLL\obj\Debug\CalculadoraBLL.pdb

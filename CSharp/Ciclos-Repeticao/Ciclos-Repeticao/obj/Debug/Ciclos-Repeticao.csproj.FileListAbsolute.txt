@@ -1,7 +1,0 @@
-C:\Users\Jonathan\OneDrive\Área de Trabalho\Curso Intensivo C# .NET\Ciclos-Repeticao\Ciclos-Repeticao\bin\Debug\Ciclos-Repeticao.exe.config
-C:\Users\Jonathan\OneDrive\Área de Trabalho\Curso Intensivo C# .NET\Ciclos-Repeticao\Ciclos-Repeticao\bin\Debug\Ciclos-Repeticao.exe
-C:\Users\Jonathan\OneDrive\Área de Trabalho\Curso Intensivo C# .NET\Ciclos-Repeticao\Ciclos-Repeticao\bin\Debug\Ciclos-Repeticao.pdb
-C:\Users\Jonathan\OneDrive\Área de Trabalho\Curso Intensivo C# .NET\Ciclos-Repeticao\Ciclos-Repeticao\obj\Debug\Ciclos-Repeticao.csproj.AssemblyReference.cache
-C:\Users\Jonathan\OneDrive\Área de Trabalho\Curso Intensivo C# .NET\Ciclos-Repeticao\Ciclos-Repeticao\obj\Debug\Ciclos-Repeticao.csproj.CoreCompileInputs.cache
-C:\Users\Jonathan\OneDrive\Área de Trabalho\Curso Intensivo C# .NET\Ciclos-Repeticao\Ciclos-Repeticao\obj\Debug\Ciclos-Repeticao.exe
-C:\Users\Jonathan\OneDrive\Área de Trabalho\Curso Intensivo C# .NET\Ciclos-Repeticao\Ciclos-Repeticao\obj\Debug\Ciclos-Repeticao.pdb
