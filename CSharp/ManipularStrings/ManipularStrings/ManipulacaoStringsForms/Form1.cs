@@ -112,19 +112,33 @@ namespace ManipulacaoStringsForms
 
             #region Exemplo de Metodo Insert - Replace
 
-            string nome = "João da Silva";
+            //string nome = "João da Silva";
 
-            // metodo replace um trecho da string por outro conforme definido na declaração do metodo
+            //// metodo replace um trecho da string por outro conforme definido na declaração do metodo
 
-            var nomeFinal = nome.Replace("João", "Jonathan");
+            //var nomeFinal = nome.Replace("João", "Jonathan");
 
-            label1.Text = nomeFinal; // Retorna a string "Jonathan da Silva"
+            //label1.Text = nomeFinal; // Retorna a string "Jonathan da Silva"
 
 
 
-            // metodo insert insere um trecho dentro de uma string conforme definido na declaração do metodo
+            //// metodo insert insere um trecho dentro de uma string conforme definido na declaração do metodo
 
-            label1.Text = nomeFinal.Insert(0, "Ola "); // O 0 aqui é o indicie da string onde será inserido a nova palavra, ou seja, o "Ola" será inserido na posição 0 da string "nome"
+            //label1.Text = nomeFinal.Insert(0, "Ola "); // O 0 aqui é o indicie da string onde será inserido a nova palavra, ou seja, o "Ola" será inserido na posição 0 da string "nome"
+
+            #endregion
+
+
+
+
+            #region Exemplo do Metodo Length - Substring 
+
+            string nome = "Jonathan Lopes da Silva";
+
+            var tam = nome.Length; // o Length retorna o tamanho da string - contando tambem os espaços em branco
+
+
+            label1.Text = "O nome " + nome + " contem " + tam + " letras"; 
 
             #endregion
         }
