@@ -65,7 +65,7 @@ namespace ManipulacaoStringsForms
 
 
 
-            #region Exemplo LastIndexOf
+            #region Exemplo IndexOf - LastIndexOf
 
             //string nome = "João da Silva";
 
@@ -143,15 +143,50 @@ namespace ManipulacaoStringsForms
 
             // EXEMPLO DE USO DO LENGTH EM UM LOOP FOR
 
-            for(int i = 0; i < nome.Length; i++) // O length retorna o tamanho da string, ou seja, o loop irá ter sua atividade definida enquanto index (i) for menor que o tamano da string
-            {
+            //for(int i = 0; i < nome.Length; i++) // O length retorna o tamanho da string, ou seja, o loop irá ter sua atividade definida enquanto index (i) for menor que o tamano da string
+            //{
 
-                resultado += nome[i] + "\n"; // aqui ele irá retornar cada letra da string "nome" em uma linha diferente
+            //    resultado += nome[i] + "\n"; // aqui ele irá retornar cada letra da string "nome" em uma linha diferente
 
-            }
+            //}
 
 
-            label1.Text = resultado;
+            //label1.Text = resultado;
+
+
+            //------------------------------------------
+
+
+            // metodo Substring 
+
+
+            string parte = nome.Substring(0, 3); // O substring retorna uma parte da string conforme definido na declaração do metodo
+            // as duas assinaturas do substring são: 
+            // Substring(int startIndex, int length) - onde o startIndex é o indice inicial da string que será retornada e o length é o tamanho da string que será retornada
+            // No exemplo acima estou definindo que irá pegar do indice 0 ate o indice 3, ou seja, irá me retornar apenas os 3 primeiros caracteres
+
+            label1.Text = parte; // Retorna a string "Jon" - ou seja, os 3 primeiros caracteres da string "nome"
+
+            //Substring corta a string conforme o tamanho definido na declaração do metodo e ignora o resto da string 
+
+
+            // tambem podemos definir apenas o indice inicial, e o substring irá retornar o restante da string a partir do indice definido sem limite de tamanho
+
+            string nome2 = "Jonathan Lopes";
+
+            string parte2 = nome2.Substring(8); // O substring retorna uma parte da string conforme definido na declaração do metodo
+
+            label1.Text =  parte2; // imprime tudo que esta a partir do indice 8
+
+
+            //exe´mplo pratico para pegar um ponto especifico com IndexOf 
+
+            string nome3 = "Jonathan Lopes da Silva";
+            string parte3 = nome3.Substring(nome3.IndexOf("da"), 3); // O substring retorna uma parte da string conforme definido na declaração do metodo com o auxilio do IndexOf
+
+            // nesse caso ele irá retornar tudo que esta a partir do "da", e mais 3 adiante, conforme tamanho da length definido (3) ,mas tambem posso definir para pegar tudo tambem
+            // 
+            label1.Text = parte3; // imprime tudo que esta a partir do indice 8
 
 
 
