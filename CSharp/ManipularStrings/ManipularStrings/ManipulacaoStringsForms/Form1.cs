@@ -133,12 +133,28 @@ namespace ManipulacaoStringsForms
 
             #region Exemplo do Metodo Length - Substring 
 
-            string nome = "Jonathan Lopes da Silva";
+            string nome = "Jonathan";
+            string resultado = "";
 
-            var tam = nome.Length; // o Length retorna o tamanho da string - contando tambem os espaços em branco
+            //var tam = nome.Length; // o Length retorna o tamanho da string - contando tambem os espaços em branco
 
 
-            label1.Text = "O nome " + nome + " contem " + tam + " letras"; 
+            //label1.Text = "O nome " + nome + " contem " + tam + " letras"; 
+
+            // EXEMPLO DE USO DO LENGTH EM UM LOOP FOR
+
+            for(int i = 0; i < nome.Length; i++) // O length retorna o tamanho da string, ou seja, o loop irá ter sua atividade definida enquanto index (i) for menor que o tamano da string
+            {
+
+                resultado += nome[i] + "\n"; // aqui ele irá retornar cada letra da string "nome" em uma linha diferente
+
+            }
+
+
+            label1.Text = resultado;
+
+
+
 
             #endregion
         }
