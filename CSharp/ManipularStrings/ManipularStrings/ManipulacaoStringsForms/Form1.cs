@@ -199,20 +199,20 @@ namespace ManipulacaoStringsForms
 
             // metodo Split faz a divisão de uma string em varias partes - posso cortar uma mensagem em duas ou tres partes conforme delimitador 
 
-            string nomes = "Jonathan, Lucas, Gustavo, Marcelo, Carlos";
+            //string nomes = "Jonathan, Lucas, Gustavo, Marcelo, Carlos";
 
 
-            char[] separador = { ',' }; // O separador é o delimitador que irá dividir a string em partes, nesse caso estou definindo a virgula como delimitador
+            //char[] separador = { ',' }; // O separador é o delimitador que irá dividir a string em partes, nesse caso estou definindo a virgula como delimitador
 
-            string[] resultado =  nomes.Split(separador); // O split divide a string conforme o delimitador definido na declaração do metodo
+            //string[] resultado =  nomes.Split(separador); // O split divide a string conforme o delimitador definido na declaração do metodo
 
 
-            foreach(string nome in resultado)
-            {
+            //foreach(string nome in resultado)
+            //{
 
-                label1.Text += nome; // irá imprimir cada nome em uma linha diferente a partir do separador e com a quebra de linha "\n"
+            //    label1.Text += nome; // irá imprimir cada nome em uma linha diferente a partir do separador e com a quebra de linha "\n"
 
-            }
+            //}
             // reapre que o split é um metodo muito util para dividir uma string em partes, como por exemplo, separar os nomes de uma lista de contatos,
             // ou separar os numeros de um telefone, etc
             // nesse exemplo ele usa a virgula como delimitador, ou seja, qualquer ponto da string que ele encontrar uma virgula ele irá dividir
@@ -220,6 +220,54 @@ namespace ManipulacaoStringsForms
             // que pode ser percorrido com um loop foreach, como no exemplo acima
 
             #endregion
+
+
+
+
+            #region Exemplo do StartsWith - EndsWith
+
+            //start e end with são metodos booleanos que verificam se a string começa ou termina com o trecho definido na declaração do metodo
+
+
+            // --------------  Exemplo do StartsWith -------------
+            string nome = "Jonathan Lopes da Silva";
+
+            bool res; // Retorna true se a string começar com o trecho definido na declaração do metodo
+            bool res2; // Retorna true se a string terminar com o trecho definido na declaração do metodo
+
+            if (nome.StartsWith("Jonathan"))
+            {
+
+               res = true;
+
+            }else
+            {
+                res = false;
+            }
+           
+
+
+            // ------------------ Exemplo de EndWith ------------
+            string nome2 = "Marcus Fenix";
+
+
+            if (nome2.EndsWith("Fenix"))
+            {
+
+                res2 = true;
+
+            }
+            else
+            {
+                res2 = false;
+            }
+
+            label1.Text = res.ToString() + "\n" + res2.ToString(); // Retorna true se a string começar com o trecho definido na declaração do metodo
+
+
+            #endregion
+
+
         }
 
 
