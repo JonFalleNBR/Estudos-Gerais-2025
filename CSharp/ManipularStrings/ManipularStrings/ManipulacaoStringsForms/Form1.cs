@@ -133,63 +133,91 @@ namespace ManipulacaoStringsForms
 
             #region Exemplo do Metodo Length - Substring 
 
-            string nome = "Jonathan";
-            string resultado = "";
+            //string nome = "Jonathan";
+            //string resultado = "";
 
-            //var tam = nome.Length; // o Length retorna o tamanho da string - contando tambem os espaços em branco
-
-
-            //label1.Text = "O nome " + nome + " contem " + tam + " letras"; 
-
-            // EXEMPLO DE USO DO LENGTH EM UM LOOP FOR
-
-            //for(int i = 0; i < nome.Length; i++) // O length retorna o tamanho da string, ou seja, o loop irá ter sua atividade definida enquanto index (i) for menor que o tamano da string
-            //{
-
-            //    resultado += nome[i] + "\n"; // aqui ele irá retornar cada letra da string "nome" em uma linha diferente
-
-            //}
+            ////var tam = nome.Length; // o Length retorna o tamanho da string - contando tambem os espaços em branco
 
 
-            //label1.Text = resultado;
+            ////label1.Text = "O nome " + nome + " contem " + tam + " letras"; 
+
+            //// EXEMPLO DE USO DO LENGTH EM UM LOOP FOR
+
+            ////for(int i = 0; i < nome.Length; i++) // O length retorna o tamanho da string, ou seja, o loop irá ter sua atividade definida enquanto index (i) for menor que o tamano da string
+            ////{
+
+            ////    resultado += nome[i] + "\n"; // aqui ele irá retornar cada letra da string "nome" em uma linha diferente
+
+            ////}
 
 
-            //------------------------------------------
+            ////label1.Text = resultado;
 
 
-            // metodo Substring 
+            ////------------------------------------------
 
 
-            string parte = nome.Substring(0, 3); // O substring retorna uma parte da string conforme definido na declaração do metodo
-            // as duas assinaturas do substring são: 
-            // Substring(int startIndex, int length) - onde o startIndex é o indice inicial da string que será retornada e o length é o tamanho da string que será retornada
-            // No exemplo acima estou definindo que irá pegar do indice 0 ate o indice 3, ou seja, irá me retornar apenas os 3 primeiros caracteres
-
-            label1.Text = parte; // Retorna a string "Jon" - ou seja, os 3 primeiros caracteres da string "nome"
-
-            //Substring corta a string conforme o tamanho definido na declaração do metodo e ignora o resto da string 
+            //// metodo Substring 
 
 
-            // tambem podemos definir apenas o indice inicial, e o substring irá retornar o restante da string a partir do indice definido sem limite de tamanho
+            //string parte = nome.Substring(0, 3); // O substring retorna uma parte da string conforme definido na declaração do metodo
+            //// as duas assinaturas do substring são: 
+            //// Substring(int startIndex, int length) - onde o startIndex é o indice inicial da string que será retornada e o length é o tamanho da string que será retornada
+            //// No exemplo acima estou definindo que irá pegar do indice 0 ate o indice 3, ou seja, irá me retornar apenas os 3 primeiros caracteres
 
-            string nome2 = "Jonathan Lopes";
+            //label1.Text = parte; // Retorna a string "Jon" - ou seja, os 3 primeiros caracteres da string "nome"
 
-            string parte2 = nome2.Substring(8); // O substring retorna uma parte da string conforme definido na declaração do metodo
-
-            label1.Text =  parte2; // imprime tudo que esta a partir do indice 8
-
-
-            //exe´mplo pratico para pegar um ponto especifico com IndexOf 
-
-            string nome3 = "Jonathan Lopes da Silva";
-            string parte3 = nome3.Substring(nome3.IndexOf("da"), 3); // O substring retorna uma parte da string conforme definido na declaração do metodo com o auxilio do IndexOf
-
-            // nesse caso ele irá retornar tudo que esta a partir do "da", e mais 3 adiante, conforme tamanho da length definido (3) ,mas tambem posso definir para pegar tudo tambem
-            // 
-            label1.Text = parte3; // imprime tudo que esta a partir do indice 8
+            ////Substring corta a string conforme o tamanho definido na declaração do metodo e ignora o resto da string 
 
 
+            //// tambem podemos definir apenas o indice inicial, e o substring irá retornar o restante da string a partir do indice definido sem limite de tamanho
 
+            //string nome2 = "Jonathan Lopes";
+
+            //string parte2 = nome2.Substring(8); // O substring retorna uma parte da string conforme definido na declaração do metodo
+
+            //label1.Text =  parte2; // imprime tudo que esta a partir do indice 8
+
+
+            ////exe´mplo pratico para pegar um ponto especifico com IndexOf 
+
+            //string nome3 = "Jonathan Lopes da Silva";
+            //string parte3 = nome3.Substring(nome3.IndexOf("da"), 3); // O substring retorna uma parte da string conforme definido na declaração do metodo com o auxilio do IndexOf
+
+            //// nesse caso ele irá retornar tudo que esta a partir do "da", e mais 3 adiante, conforme tamanho da length definido (3) ,mas tambem posso definir para pegar tudo tambem
+            //// 
+            //label1.Text = parte3; // imprime tudo que esta a partir do indice 8
+
+
+
+
+            #endregion
+
+
+
+            #region Metodo Split
+
+            // metodo Split faz a divisão de uma string em varias partes - posso cortar uma mensagem em duas ou tres partes conforme delimitador 
+
+            string nomes = "Jonathan, Lucas, Gustavo, Marcelo, Carlos";
+
+
+            char[] separador = { ',' }; // O separador é o delimitador que irá dividir a string em partes, nesse caso estou definindo a virgula como delimitador
+
+            string[] resultado =  nomes.Split(separador); // O split divide a string conforme o delimitador definido na declaração do metodo
+
+
+            foreach(string nome in resultado)
+            {
+
+                label1.Text += nome; // irá imprimir cada nome em uma linha diferente a partir do separador e com a quebra de linha "\n"
+
+            }
+            // reapre que o split é um metodo muito util para dividir uma string em partes, como por exemplo, separar os nomes de uma lista de contatos,
+            // ou separar os numeros de um telefone, etc
+            // nesse exemplo ele usa a virgula como delimitador, ou seja, qualquer ponto da string que ele encontrar uma virgula ele irá dividir
+            // a string em partes, e cada parte será armazenada em um array de strings,
+            // que pode ser percorrido com um loop foreach, como no exemplo acima
 
             #endregion
         }
