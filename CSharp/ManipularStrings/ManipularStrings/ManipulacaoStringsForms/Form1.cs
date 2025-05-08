@@ -311,7 +311,14 @@ namespace ManipulacaoStringsForms
 
             #region Metodo CompareTo - Equals
 
-            
+
+            string nome = "Jonathan Lopes da Silva";
+            string nome2 = "Jonathan Lopes da Silva";
+
+            string res = nome.CompareTo(nome2).ToString(); // O CompareTo compara duas strings e retorna 0 se forem iguais, -1 se a primeira string for menor que a segunda e 1 se a primeira string for maior que a segunda
+
+
+            label1.Text = res.ToString(); // Retorna 0 se as strings forem iguais, -1 se a primeira string for menor que a segunda e 1 se a primeira string for maior que a segunda
 
 
             #endregion
