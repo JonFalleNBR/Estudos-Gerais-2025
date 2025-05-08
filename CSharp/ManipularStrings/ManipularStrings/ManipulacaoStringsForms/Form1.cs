@@ -307,6 +307,15 @@ namespace ManipulacaoStringsForms
 
 
             #endregion
+
+
+            #region Metodo CompareTo - Equals
+
+            
+
+
+            #endregion
+
         }
 
 
