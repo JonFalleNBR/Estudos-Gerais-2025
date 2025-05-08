@@ -313,12 +313,28 @@ namespace ManipulacaoStringsForms
 
 
             string nome = "Jonathan Lopes da Silva";
-            string nome2 = "Jonathan Lopes da Silva";
+            string nome2 = "Martin Luther";
 
             string res = nome.CompareTo(nome2).ToString(); // O CompareTo compara duas strings e retorna 0 se forem iguais, -1 se a primeira string for menor que a segunda e 1 se a primeira string for maior que a segunda
 
+      
 
-            label1.Text = res.ToString(); // Retorna 0 se as strings forem iguais, -1 se a primeira string for menor que a segunda e 1 se a primeira string for maior que a segunda
+            //label1.Text = res.ToString(); // Retorna 0 se as strings forem iguais, -1 se a primeira string for menor que a segunda e 1 se a primeira string for maior que a segunda
+
+
+            //Exemplo do Equals
+            // O Equals compara duas strings e retorna true se forem iguais e false se forem diferentes
+
+            if (!nome.Equals(nome2, StringComparison.OrdinalIgnoreCase)) // StringComparison para ignorar o case sensitive
+            {
+                label1.Text = "As strings são diferentes";
+
+
+            }
+            else
+            {
+                label1.Text = "As strings são iguais";
+            }
 
 
             #endregion
