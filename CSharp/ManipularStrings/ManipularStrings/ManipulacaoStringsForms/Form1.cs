@@ -120,6 +120,11 @@ namespace ManipulacaoStringsForms
 
             //label1.Text = nomeFinal; // Retorna a string "Jonathan da Silva"
 
+            // Outro exemplo do Replacepara colar toda uma string
+            //string nome = "Jonathan Lopes da Silva";
+            //string nomeFinal = nome.Replace(" ", "");
+
+            //label1.Text = nomeFinal;
 
 
             //// metodo insert insere um trecho dentro de uma string conforme definido na declaração do metodo
@@ -230,44 +235,78 @@ namespace ManipulacaoStringsForms
 
 
             // --------------  Exemplo do StartsWith -------------
-            string nome = "Jonathan Lopes da Silva";
+            //string nome = "Jonathan Lopes da Silva";
 
-            bool res; // Retorna true se a string começar com o trecho definido na declaração do metodo
-            bool res2; // Retorna true se a string terminar com o trecho definido na declaração do metodo
+            //bool res; // Retorna true se a string começar com o trecho definido na declaração do metodo
+            //bool res2; // Retorna true se a string terminar com o trecho definido na declaração do metodo
 
-            if (nome.StartsWith("Jonathan"))
-            {
+            //if (nome.StartsWith("Jonathan", StringComparison.OrdinalIgnoreCase)) // O StringComparison.OrdinalIgnoreCase serve para ignorar o case sensitive, ou seja, ele irá retornar true mesmo que a string esteja em minusculo
+            //{
 
-               res = true;
+            //   res = true;
 
-            }else
-            {
-                res = false;
-            }
-           
-
-
-            // ------------------ Exemplo de EndWith ------------
-            string nome2 = "Marcus Fenix";
+            //}else
+            //{
+            //    res = false;
+            //}
 
 
-            if (nome2.EndsWith("Fenix"))
-            {
 
-                res2 = true;
+            //// ------------------ Exemplo de EndWith ------------
+            //string nome2 = "Marcus Fenix";
 
-            }
-            else
-            {
-                res2 = false;
-            }
 
-            label1.Text = res.ToString() + "\n" + res2.ToString(); // Retorna true se a string começar com o trecho definido na declaração do metodo
+            //if (nome2.EndsWith("Fsnix", StringComparison.OrdinalIgnoreCase))
+            //{
+
+            //    res2 = true;
+
+            //}
+            //else
+            //{
+            //    res2 = false;
+            //}
+
+            //label1.Text = "StartWith é : " + res.ToString() + "\n" + "EndsWith é : " + res2.ToString(); // Retorna true se a string começar com o trecho definido na declaração do metodo
+
+
+
+            // Pode ser apenas parte da String , StartWith(Jon) ja serve para retornar true
+            // Também é importante se atentar para o uso do StringComparison, uma vez que o C# é case sensitive, ou seja, ele diferencia letras maiusculas de minusculas
+
 
 
             #endregion
 
 
+
+            #region Exemplo do Metodo Trim - TrimStart - TrimEnd
+
+
+            //string nome = " Jonathan Lopes da Silva ! ";
+
+            //// nesse caso ele esta removendo os espaços em branco do começo e fim da string - resultado -> "Jonathan Lopes da Silva !"
+            ////string imprime = nome.Trim();
+
+
+            //string mensagem = " Ola Mundo! ";
+
+            ////string imprime = mensagem.TrimStart(); // Nesse caso esta removendo apenas o espaço em branco do inicio da mensagem 
+
+            //string mensagem2 = " Eu odeio Call of Duty Warzone !!!!   ";
+
+            //string imprime  = mensagem2.TrimEnd(); // Nesse caso esta removendo os espaços em branco do final da mensagem 
+
+
+
+
+            //label1.Text = imprime;
+
+
+
+
+
+            #endregion
         }
 
 
