@@ -371,9 +371,11 @@ namespace ManipulacaoStringsForms
             // as letas maiusculas indicam o formato da data e hora, como por exemplo, {0:dd/MM/yyyy} para trazer a data no formato dia/mês/ano
             // Se colocar em Maiusculo, ele irá trazer o dia da semana, como por exemplo, {0:dddd} para trazer o dia da semana por extenso
 
+            // Melhor maneira de estruturar uma string com format é esse abaixo 
 
-         
+            string s3 = $"Hoje é {DateTime.Now:D} e as horas são {DateTime.Now:T}"; //tras o dia e a hora atual direto na string formatada , sem precisar instanciar variaveis
 
+            label1.Text = s3;
 
             #endregion
 
