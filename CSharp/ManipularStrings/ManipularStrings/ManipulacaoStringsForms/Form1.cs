@@ -312,29 +312,67 @@ namespace ManipulacaoStringsForms
             #region Metodo CompareTo - Equals
 
 
-            string nome = "Jonathan Lopes da Silva";
-            string nome2 = "Martin Luther";
+            //string nome = "Jonathan Lopes da Silva";
+            //string nome2 = "Martin Luther";
 
-            string res = nome.CompareTo(nome2).ToString(); // O CompareTo compara duas strings e retorna 0 se forem iguais, -1 se a primeira string for menor que a segunda e 1 se a primeira string for maior que a segunda
-
-      
-
-            //label1.Text = res.ToString(); // Retorna 0 se as strings forem iguais, -1 se a primeira string for menor que a segunda e 1 se a primeira string for maior que a segunda
+            //string res = nome.CompareTo(nome2).ToString();
+            //// O CompareTo compara duas strings e retorna 0 se forem iguais, -1 se a primeira string for menor que a segunda e 1 se a primeira string for maior que a segunda
 
 
-            //Exemplo do Equals
-            // O Equals compara duas strings e retorna true se forem iguais e false se forem diferentes
 
-            if (!nome.Equals(nome2, StringComparison.OrdinalIgnoreCase)) // StringComparison para ignorar o case sensitive
-            {
-                label1.Text = "As strings são diferentes";
+            ////label1.Text = res.ToString(); // Retorna 0 se as strings forem iguais, -1 se a primeira string for menor que a segunda e 1 se a primeira string for maior que a segunda
 
 
-            }
-            else
-            {
-                label1.Text = "As strings são iguais";
-            }
+            ////Exemplo do Equals
+            //// O Equals compara duas strings e retorna true se forem iguais e false se forem diferentes
+
+            //if (!nome.Equals(nome2, StringComparison.OrdinalIgnoreCase)) // StringComparison para ignorar o case sensitive
+            //{
+            //    label1.Text = "As strings são diferentes";
+
+
+            //}
+            //else
+            //{
+            //    label1.Text = "As strings são iguais";
+            //}
+
+
+            #endregion
+
+
+            #region Metodo Format
+
+            decimal valor = 19.95m; // o sufixo "m" indica que o valor é decimal
+
+            int temp = 32; // exemplo de variavel inteira
+
+
+            //string s = $"O valor do produto é {valor:C2}"; // exemplo generico em que se faz o concat de um string com outro tipo de dado 
+
+            // Mas nessa aula estamos vendo o Format- segue o exemplo do uso abaixo
+
+
+            // O {0} indica que o valor será substituido pelo primeiro parametro da string, ou seja, o valor
+            //string s = String.Format("O valor do produto é {0:C2} e a temperatura é {1}", valor, temp); // primeiro indice é valor , depois temp e conforme eu quiser adicionar, basta alterar o indice (2, 3, 4) etc 
+
+            ////label1.Text = s;
+
+            //// {0:N1} indica que o valor será formatado com 1 casa decimal, ou seja, o valor será exibido com 1 casa decimal 
+            //// {0:C2} indica que o valor será formatado como moeda, ou seja, o valor será exibido com 2 casas decimais e o simbolo da moeda (R$) - nesse caso o C2 é para moeda brasileira
+
+            //// tambem podemos criar as variaveis dentro do format, como no exemplo abaixo
+
+            //string s2 = String.Format("Hoje é {0:D} e são {0:T}", DateTime.Now); //tras o dia e a hora atual direto na string formatada , sem precisar instanciar variaveis
+            //label1.Text = s2;
+
+
+            //{0:d} e são {0:t} um traz  o dia e o outro as horas
+            // as letas maiusculas indicam o formato da data e hora, como por exemplo, {0:dd/MM/yyyy} para trazer a data no formato dia/mês/ano
+            // Se colocar em Maiusculo, ele irá trazer o dia da semana, como por exemplo, {0:dddd} para trazer o dia da semana por extenso
+
+
+         
 
 
             #endregion
