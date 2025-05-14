@@ -32,6 +32,8 @@ namespace SistemaLogin
             {
 
                 MessageBox.Show("Login Efetuado com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Close();
                 Form1 form1 = new Form1();
                 form1.ShowDialog();
 
@@ -39,7 +41,12 @@ namespace SistemaLogin
             else
             {
                 MessageBox.Show("Usuario ou senha invalidos", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                /*Environment.Exit(0)*/;
+                txtUsuario.Clear();
+                txtSenha.Clear();
+
+                txtUsuario.Focus();
+                /*Environment.Exit(0)*/
+
 
             }
         }
