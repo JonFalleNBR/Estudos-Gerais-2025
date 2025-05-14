@@ -24,8 +24,24 @@ namespace SistemaLogin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
-            form1.ShowDialog();
+
+            string nome = txtUsuario.Text;
+            string senha = txtSenha.Text;
+
+            if (CadastroUsuarios.Login(nome, senha))
+            {
+
+                MessageBox.Show("Login Efetuado com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Form1 form1 = new Form1();
+                form1.ShowDialog();
+
+            }
+            else
+            {
+                MessageBox.Show("Usuario ou senha invalidos", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                /*Environment.Exit(0)*/;
+
+            }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

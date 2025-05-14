@@ -7,15 +7,14 @@ using System.Windows.Forms;
 
 namespace SistemaLogin
 {
-    class CadastroUsuarios
+    static class CadastroUsuarios
     {
 
         // Classe responsavel por cadastrar os usuarios e verificar se o usuario ja existe
 
-        private List<Usuario> usuarios = new List<Usuario>();
+        private static List<Usuario> usuarios = new List<Usuario>();
 
-
-        public void CadastrarUsuario(string nome, string senha)
+        static public void CadastrarUsuario(string nome, string senha)
         {
             // Verifica se o usuario ja existe
             if (usuarios.Any(u => u.Nome == nome))
@@ -28,7 +27,7 @@ namespace SistemaLogin
         }
 
 
-        public bool Login(string nome, string senha)
+        public static bool Login(string nome, string senha)
         {
 
            
