@@ -38,8 +38,9 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(715, 164);
             this.label1.TabIndex = 0;
-            this.label1.Text = "TELA INICIAL";
+            this.label1.Text = "##BEM VINDO##";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+           
             // 
             // Form1
             // 

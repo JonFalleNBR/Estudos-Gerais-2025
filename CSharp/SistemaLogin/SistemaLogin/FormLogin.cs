@@ -12,6 +12,9 @@ namespace SistemaLogin
 {
     public partial class FormLogin : Form
     {
+
+        public static bool Cancelar = false;
+
         public FormLogin()
         {
             InitializeComponent();
@@ -33,9 +36,9 @@ namespace SistemaLogin
 
                 MessageBox.Show("Login Efetuado com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                Close();
                 Form1 form1 = new Form1();
                 form1.ShowDialog();
+                FormLogin.Cancelar = true;
 
             }
             else
@@ -45,7 +48,8 @@ namespace SistemaLogin
                 txtSenha.Clear();
 
                 txtUsuario.Focus();
-                /*Environment.Exit(0)*/
+                Close();
+                //Environment.Exit(0);
 
 
             }
@@ -53,7 +57,10 @@ namespace SistemaLogin
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+
+            Cancelar = true;
+            Close();
+
         }
     }
 }

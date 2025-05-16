@@ -12,34 +12,38 @@ namespace SistemaLogin
 
         // Classe responsavel por cadastrar os usuarios e verificar se o usuario ja existe
 
-        private static List<Usuario> usuarios = new List<Usuario>();
 
-        static public void CadastrarUsuario(string nome, string senha)
+        private static Usuario[] usuarios =
         {
-            // Verifica se o usuario ja existe
-            if (usuarios.Any(u => u.Nome == nome))
-            {
-                throw new Exception("Usuario ja existe");
-                MessageBox.Show("Usuario ja existe na base de Dados", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            // Adiciona o usuario a lista
-            usuarios.Add(new Usuario(nome, senha));
+
+            new Usuario() { Nome = "Gabriel", Senha = "abc123" },
+            new Usuario() { Nome = "Danny", Senha = "123abc" },
+            new Usuario() { Nome = "Arthur", Senha = "abcd" }
+    };
+
+        private static Usuario _userLogado = null;
+
+
+        public static Usuario UsuarioLogado
+        {
+            get { return _userLogado; }
+            set { _userLogado = value; }
         }
 
 
         public static bool Login(string nome, string senha)
         {
 
-           
+
             foreach (Usuario usuario in usuarios)
             {
                 // Verifica se o usuario e senha estao corretos e existem na lista
                 if (usuario.Nome == nome && usuario.Senha == senha)
                 {
-             
+                    UsuarioLogado = usuario;
                     return true;
                 }
-                              
+
             }
 
             return false;
@@ -48,3 +52,4 @@ namespace SistemaLogin
         }
     }
 }
+
