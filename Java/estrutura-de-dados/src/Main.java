@@ -16,11 +16,7 @@ public class Main {
         lista.Adiciona(1);
 
         System.out.println(lista);
-
-
-
-
-
+        System.out.println("Tamanho da Lista: " + lista.getTamanho());
 
     }
 }

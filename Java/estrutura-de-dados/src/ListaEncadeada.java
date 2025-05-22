@@ -13,24 +13,28 @@ public class ListaEncadeada <T>{
 
     private No<T> inicio;
 
+    private int tamanho; // objeto que irá retornar o tamanho da Lista
 
+
+    public int getTamanho(){
+        return this.tamanho;
+    }
 
     public void Adiciona(T elemento){
         // Metodo que faz a adição do novo elemento no final da lista
         // Uma lista sempre começa com o item inicial como null
 
         No<T> celula = new No<T>(elemento); // passa o elemento do nó inicial
-
     // apontar o inicio para o nó
-
-    this.inicio = celula;
+        this.inicio = celula;
+        this.tamanho++; // incrementar o tamanho da Lista
 }
 
 
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("ListaEncadeada{");
-        sb.append("inicio=").append(inicio); // imprime o nó inicial
+        sb.append("inicio= ").append(inicio); // imprime o nó inicial
         sb.append('}');
         return sb.toString();
     }
