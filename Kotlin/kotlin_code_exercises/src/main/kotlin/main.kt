@@ -1,3 +1,5 @@
+import javax.annotation.processing.ProcessingEnvironment
+
 fun main() {
     //println("Hello, Kotlin!")
 
@@ -17,7 +19,7 @@ fun main() {
     for(i in 0..10){
         println(asterisco.repeat(i))
     }
-*/
+
 // Sequencia de Fibonnacci
 
     var a = 0;
@@ -33,10 +35,8 @@ fun main() {
 
     for (i in 0 until valores) {
 
-
         if(i < valores -1){
            print("$a, ")
-
 
         }else{
 
@@ -49,6 +49,29 @@ fun main() {
         b = c;
 
     }
+*/
+
+    var valor : Int;
+
+    do{
+        print("\n Informe um valor para calculo: ");
+        val input = readLine();
+        valor = input ?.toIntOrNull()?: 0;
+
+        if(valor == 0){
+
+            print("###Valor invalido###")
+        }
+
+    }while(valor == 0)
+
+    for(i in 0..10){
+
+        val calc = valor * i;
+        print("\n $valor X $i = $calc")
+
+    }
+
     }
 
 
