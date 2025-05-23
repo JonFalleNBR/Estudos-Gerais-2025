@@ -13,6 +13,8 @@ public class ListaEncadeada <T>{
 
     private No<T> inicio;
 
+    private No<T> fim; // nó que irá referenciar o fim da lista
+
     private int tamanho; // objeto que irá retornar o tamanho da Lista
 
 
@@ -25,18 +27,39 @@ public class ListaEncadeada <T>{
         // Uma lista sempre começa com o item inicial como null
 
         No<T> celula = new No<T>(elemento); // passa o elemento do nó inicial
-    // apontar o inicio para o nó
-        this.inicio = celula;
+
+        if(this.tamanho == 0){
+
+            this.inicio = celula;
+        }else {
+
+            this.fim.setProximo(celula);
+
+        }
+        this.fim = celula; // o fim da lista agora é o novo nó
         this.tamanho++; // incrementar o tamanho da Lista
+
+
+
 }
 
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("ListaEncadeada{");
-        sb.append("inicio= ").append(inicio); // imprime o nó inicial
-        sb.append('}');
+        final StringBuilder sb = new StringBuilder("ListaEncadeada [");
+
+        No<T> atual = inicio; // variável que irá percorrer a lista - o ponteiro
+        while(atual != null){
+            sb.append(atual);
+            if(atual.getProximo() != null){
+                sb.append(" -> "); // se o próximo nó não for nulo, adiciona a seta
+            }
+            atual = atual.getProximo();
+        }
+
+        sb.append(']');
         return sb.toString();
+
     }
 
 
