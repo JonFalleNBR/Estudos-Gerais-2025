@@ -44,6 +44,25 @@ public class ListaEncadeada <T>{
 }
 
 
+public void Limpa(){
+    // Metodo que limpa a lista encadeada
+
+    for(No<T> atual = this.inicio ; atual != null;){
+        No<T> proximo = atual.getProximo();  // guarda o proximo nó;
+        atual.setElemento(null); // limpa o elemento atual
+        atual.setProximo(null); // limpa o nó atual
+        atual = proximo; // atualiza o nó atual para o próximo nó
+
+
+        // esse loop for diz que atual é igual ao inicio da lista , e enquanto ele não for nulo, ira fazer o loop pulando para o proximo nó
+    }
+
+    // somente esse trecho aqui ja limpa a lista, mas para o exemplo ficar mais completo e treinar logica de programação, foi ensinado o loop for gerenciando cada espaço da memoria
+    this.inicio = null;
+    this.fim = null; // limpa o fim da lista
+    this.tamanho = 0 ;
+
+}
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("ListaEncadeada [");

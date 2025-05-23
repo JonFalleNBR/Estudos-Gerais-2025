@@ -12,7 +12,7 @@ public class No<T> {
     public No(T elemento, No<T> proximo){
         this.elemento = elemento;
         this.proximo =  proximo;
-// por que não usar o this.proximo = proximo; ?
+
 
     }
 

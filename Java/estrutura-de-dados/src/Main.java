@@ -18,6 +18,11 @@ public class Main {
         System.out.println(lista);
         System.out.println("Tamanho da Lista: " + lista.getTamanho());
 
+        lista.Limpa();
+
+        System.out.println(lista);
+        System.out.println("Tamanho da Lista: " + lista.getTamanho());
+
 
     }
 }
