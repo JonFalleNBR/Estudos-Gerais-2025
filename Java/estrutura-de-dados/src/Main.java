@@ -21,6 +21,8 @@ public class Main {
 
         lista.BuscaporElemento(6);
 
+        lista.buscaPosicao(1);
+
         System.out.println(lista);
         System.out.println("Tamanho da Lista: " + lista.getTamanho());
 

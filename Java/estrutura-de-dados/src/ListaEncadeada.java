@@ -64,11 +64,31 @@ public void Limpa(){
 
 }
 
+
+public T buscaPosicao(T elemento){
+        No<T> atual = this.inicio; // variável que irá percorrer a lista - o ponteiro
+        int posicao = 0; // variável que irá armazenar a posição do elemento
+        while(atual != null){
+        if(atual.getElemento().equals(elemento)){
+            System.out.println("Elemento encontrado na posição: " + posicao);
+            return atual.getElemento(); // retorna o elemento se for encontrado
+        }else{
+            atual = atual.getProximo();
+            posicao++; // incrementa a posição se o elemento não for encontrado
+
+        }
+
+    }
+        System.out.println("Posição do Elemento não encontrada: " + elemento);
+        return null;
+}
+
+
 public T BuscaporElemento(T elemento) {
 
     // Logica do metodo que irá buscar um elemento da Lista e retornar - caso não encontre ,retorna null;
 
-    No<T> atual = inicio; // variável que irá percorrer a lista - o ponteiro - mesma logica do toString e Limpa()
+    No<T> atual = this.inicio; // variável que irá percorrer a lista - o ponteiro - mesma logica do toString e Limpa()
     while (atual != null) {
         if (atual.getElemento().equals(elemento)) {
             System.out.println("Elemento encontrado: " + atual.getElemento());
