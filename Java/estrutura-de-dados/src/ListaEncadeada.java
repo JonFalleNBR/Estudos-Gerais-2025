@@ -1,7 +1,7 @@
 public class ListaEncadeada <T>{
 
 
-    // Esse trecho é parte de um estudo simples de Estrutura de Dados
+    // Esse trecho é parte de um estudo de Estrutura de Dados
     // e Algoritmos, onde o objetivo é criar uma lista encadeada
     //
     // Um LikedList é uma estrutura de dados linear onde cada elemento representa um nó
@@ -63,6 +63,27 @@ public void Limpa(){
     this.tamanho = 0 ;
 
 }
+
+public T BuscaporElemento(T elemento) {
+
+    // Logica do metodo que irá buscar um elemento da Lista e retornar - caso não encontre ,retorna null;
+
+    No<T> atual = inicio; // variável que irá percorrer a lista - o ponteiro - mesma logica do toString e Limpa()
+    while (atual != null) {
+        if (atual.getElemento().equals(elemento)) {
+            System.out.println("Elemento encontrado: " + atual.getElemento());
+            return elemento; // retorna o nó atual se o elemento for encontrado
+        } else {
+
+            atual = atual.getProximo(); // se não for encontrado, atualiza o ponteiro para o próximo nó
+        }
+
+    }
+    System.out.println("Elemento não encontrado: " + elemento);
+    return null;
+}
+
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("ListaEncadeada [");

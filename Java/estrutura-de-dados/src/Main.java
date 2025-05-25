@@ -15,14 +15,14 @@ public class Main {
 
         lista.Adiciona(4);
 
+
+
+       // lista.Limpa();
+
+        lista.BuscaporElemento(6);
+
         System.out.println(lista);
         System.out.println("Tamanho da Lista: " + lista.getTamanho());
-
-        lista.Limpa();
-
-        System.out.println(lista);
-        System.out.println("Tamanho da Lista: " + lista.getTamanho());
-
 
     }
 }
