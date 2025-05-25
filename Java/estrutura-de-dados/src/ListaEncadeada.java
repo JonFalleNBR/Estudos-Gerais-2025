@@ -70,7 +70,7 @@ public T buscaPosicao(T elemento){
         int posicao = 0; // variável que irá armazenar a posição do elemento
         while(atual != null){
         if(atual.getElemento().equals(elemento)){
-            System.out.println("Elemento encontrado na posição: " + posicao);
+            System.out.println("Elemento " + elemento + " encontrado na posição: " + posicao);
             return atual.getElemento(); // retorna o elemento se for encontrado
         }else{
             atual = atual.getProximo();
