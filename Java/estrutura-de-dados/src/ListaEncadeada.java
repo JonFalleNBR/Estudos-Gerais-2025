@@ -22,7 +22,7 @@ public class ListaEncadeada <T>{
         return this.tamanho;
     }
 
-    public void Adiciona(T elemento){
+    public void adiciona(T elemento){
         // Metodo que faz a adição do novo elemento no final da lista
         // Uma lista sempre começa com o item inicial como null
 
@@ -44,7 +44,7 @@ public class ListaEncadeada <T>{
 }
 
 
-public void Limpa(){
+public void limpa(){
     // Metodo que limpa a lista encadeada
 
     for(No<T> atual = this.inicio ; atual != null;){
@@ -84,7 +84,7 @@ public T buscaPosicao(T elemento){
 }
 
 
-public T BuscaporElemento(T elemento) {
+public T buscaporElemento(T elemento) {
 
     // Logica do metodo que irá buscar um elemento da Lista e retornar - caso não encontre ,retorna null;
 

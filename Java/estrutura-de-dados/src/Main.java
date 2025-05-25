@@ -1,25 +1,21 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
 
         ListaEncadeada<Integer> lista = new ListaEncadeada<>();
-        lista.Adiciona(1);
+        lista.adiciona(1);
 
 
-        lista.Adiciona(2);
+        lista.adiciona(2);
 
 
-        lista.Adiciona(3);
+        lista.adiciona(3);
 
 
-        lista.Adiciona(4);
-
-
+        lista.adiciona(4);
 
        // lista.Limpa();
 
-        lista.BuscaporElemento(6);
+        lista.buscaporElemento(6);
 
         lista.buscaPosicao(1);
 
