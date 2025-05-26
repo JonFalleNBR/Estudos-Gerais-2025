@@ -1,5 +1,6 @@
 import kotlin.system.exitProcess
 import kotlin.io.*
+import kotlin.random.Random
 
 
 fun main() {
@@ -7,6 +8,9 @@ fun main() {
 
     // Estudo sobre a linguagem Kotlin -- Fundamentos e logica
 
+
+    // Conversão de Temperatura
+    /*
     var temp: Double;
 
     print("Informe a temperatura desejada em Celsius:");
@@ -49,8 +53,51 @@ fun main() {
 
                     }
 
+*/
+    // Jogo de adivinhação
+
+
+    val numeroSecreto = (1..100).random()
+
+    var tentativas = 0;
+
+
+    var acertou = false ;
+
+    while(!acertou ){
+        print("\nInforme um numero entre 1 e 100: ");
+        val inputNum = readLine();
+        val numero = inputNum?.toIntOrNull() ?: run {
+            print("Entrada inválida, encerrando o programa.")
+            exitProcess(0)
+        }
+            tentativas++
+
+
+            if(numero < numeroSecreto) {
+                println("O Numero Informado é menor que o numero secreto, tente novamente")
+            }else if(numero > numeroSecreto){
+                println("O numero informado é maior que o numero Secreto, tente novamente")
+            }
+            else {
+                acertou = true;
+                println("Parabens voce acertou o numero informado em $tentativas tentativas! \n " +
+                        "O numero secreto era $numeroSecreto");
+
 
             }
+
+
+        }
+
+        }
+
+
+
+
+
+
+
 
 
 
