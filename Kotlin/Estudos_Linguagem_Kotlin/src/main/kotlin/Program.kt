@@ -53,7 +53,7 @@ fun main() {
 
                     }
 
-*/
+
     // Jogo de adivinhação
 
 
@@ -90,6 +90,45 @@ fun main() {
 
         }
 
+
+    var nome : String;
+
+    print("Informe um nome : ");
+    nome  = readLine().toString();
+     // ou readLine()?: "Desconhecido"
+    println("Ola $nome")
+
+
+
+
+    // print de asteriscos
+    val asterisco = "*";
+
+    for(i in 1..10){
+
+        val linha = asterisco.repeat(i)
+        print(linha + "\n")
+    }
+
+*/
+    // Sempre que eu quiser declarar uma variavel como null eu preciso usar o ? após o tipo da variavel
+
+    var nomeCompleto : String? = null
+
+    print("Digite")
+    nomeCompleto = readLine().toString()?: null;
+    print(nomeCompleto?.length)
+    // Se eu tentar acessar o length de nomeCompleto quando ele for null, eu terei um NullPointerException
+
+
+    // caso eu queira fazer uma chamada de um metodo , eu não posso faze-lo , sendo o nomeCompleto null - mesmo que atribua valor mais tarde
+
+// uma maneira de garantir que receba a mensagem NullPointerException em um objeto que esteja Nulo é colocar o !! após a declaração da variavel
+
+    var mensagem: String? = null;
+
+    mensagem!!.length
+// Exception in thread "main" java.lang.NullPointerException
         }
 
 
