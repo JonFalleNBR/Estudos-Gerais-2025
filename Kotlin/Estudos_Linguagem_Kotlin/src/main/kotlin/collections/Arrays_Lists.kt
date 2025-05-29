@@ -3,9 +3,9 @@ package collections
 fun main (args : Array<String>){
 
 
-    val array = arrayOf("João", "Marcos", "Lucas", "Mateus")
+    //val array = arrayOf("João", "Marcos", "Lucas", "Mateus")
 
-    val lista = listOf("Java", "Kotlin", "Python", "JavaScript")
+    /*val lista = listOf("Java", "Kotlin", "Python", "JavaScript")
 
     val arrayList = arrayListOf("Laranja", "Maçã", "Banana", "Pera")
 
@@ -41,10 +41,10 @@ fun main (args : Array<String>){
 
     val str = "Ola Mundo" // string aqui é uma coleção de caracteres, não um array
     println(str[0])
-
+*/
     // exemplo de como concatenar arrays
 
-    val array1 = arrayOf("Primeiro", "Segundo", "terceiro")
+   /* val array1 = arrayOf("Primeiro", "Segundo", "terceiro")
     val array2 = arrayOf("Quaarto", "Quinto", "Sexto")
     val allSrings = array1 + array2 // concatena os dois arrays
     println("\n array concatenado:  ${allSrings.size}")
@@ -58,8 +58,26 @@ fun main (args : Array<String>){
     }else{
         println("\n O array não contém o elemento Primeiro")
 
-    }
+    }*/
 
+    // como acessar elementos individuais de um array ou lista
+
+    val arrayList = arrayListOf("João", "Marcos", "Lucas", "Mateus");
+    val list = arrayListOf("Pedro")
+
+    println (arrayList + list)
+
+    println(arrayList.size)
+    println(arrayList[0]) // Acessando o primeiro elemento do ArrayList
+    println(arrayList.get(1))
+    println(arrayList.isEmpty())
+    println(arrayList.contains("Pedro"))
+
+    arrayList.add("Judas") // nesse caso ele adiciona direto para o final do ArrayList
+
+    arrayList.add(1, "Mary") // Adicionando "Mary" na posição 1 do ArrayList
+
+    println(arrayList)
     /*
 
     use arrayOf para criar um novo Array

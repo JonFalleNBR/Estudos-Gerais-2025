@@ -68,5 +68,5 @@ fun main (args : Array<String>){
   // Isso coloca o when como uma ferramenta ainda mais poderosa que o switch case do Java - uma vez que:
         // 1 - não precisa de Break
         // 2 - pode ser usado como uma expressão que retorna um valor
-        // 3 - permite expressoes complexas diretamente no when
+        //  3 - pode ser usado com ranges, tipos de dados, expressões e até funções
 }
