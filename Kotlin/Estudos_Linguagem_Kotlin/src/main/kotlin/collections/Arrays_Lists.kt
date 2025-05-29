@@ -78,6 +78,10 @@ fun main (args : Array<String>){
     arrayList.add(1, "Mary") // Adicionando "Mary" na posição 1 do ArrayList
 
     println(arrayList)
+
+
+    val sublist = arrayList.subList(1, 4); // Criando uma sublista com os elementos de 1 a 4
+    print(sublist)
     /*
 
     use arrayOf para criar um novo Array
