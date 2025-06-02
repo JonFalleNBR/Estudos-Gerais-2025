@@ -63,4 +63,49 @@ fun main(args: Array<String>){
     }
 
 
+    // Sobre loops While e do-while
+
+        var x = 9;
+
+       while(x >= 0){
+           print("\n $x")
+           x -= 1; // ou x--
+           // começou em 9 , e foi decrementando ate chegar a 0
+           if(x == 0){
+
+               print ("\nValor chegou a 0 amigue :D")
+               exitProcess(0);
+           }
+       }
+
+    // em um loop while ele irá criar um loop enquanto a condição for verdadeira
+
+
+    var i= 0;
+    while(i <= 10){
+        print(i)
+        i++ // nesse caso o loop não vai rodar, pois a condição é falsa desde o começo
+
+    }
+    for(i in 1..10){
+        // nesse caso o loop funciona foi estipula que 1 é o valor inicial de i e acaba no 10
+
+    }
+
+    var user = object {
+        var isOnline = true
+    }
+
+    // loop while para verificar se o usuario esta online
+    while(user.isOnline){
+        print("Usuario esta Online, pressione qualquer tecla para sair... \n")
+        val input = readLine()
+        if(input != null && input.isNotEmpty()){
+            print("Ate mais! \n")
+            user.isOnline = false // altera o estado do usuario para offline
+            exitProcess(0)
+
+        }
+
+    }
 }
