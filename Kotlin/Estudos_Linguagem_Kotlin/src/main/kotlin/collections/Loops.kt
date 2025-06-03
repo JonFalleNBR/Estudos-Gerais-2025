@@ -147,12 +147,12 @@ fun main(args: Array<String>){
     outer@ for(i in 1 .. 10){
         for(j in 1..10){
             if(i - j == 5 ){
-                break@outer
+                break@outer //tem sempre que estar colado  o comando break ou continue com o nome do loop que ele vai parar
             }
             print("$i - $j \n")
         }
         // ele vai parar o loop externo quando a condição for atendida
         // foi usado o nome no loop externo para que o Break aponte para ele e funcione corretamente
-        // para definir um nome use o @ antes no nome do Loop
+        // para definir um nome use o @  no nome do Loop
     }
 }
