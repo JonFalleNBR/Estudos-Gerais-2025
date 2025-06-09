@@ -7,12 +7,17 @@ fun main(args: Array<String>){
 
     println(reverse2(numbers))
 
+
+    //form mais simples ainda
+    val reversed = numbers.reversed();
+    println(reversed)
 }
 
 fun reverse(list: List<Int>): List<Int>{
     val result = arrayListOf<Int>()
 
-    for(i in 0..list.size-1){
+    // for(i in 0..list.size - 1){ // outra forma de fazer a mesma coisa abaixo - percorre a lista toda com o range de indices de 0 a 9
+    for(i in 0 until list.size){
         result.add(list.get(list.size - 1 - i))
     }
 
