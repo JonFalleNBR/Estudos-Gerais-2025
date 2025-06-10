@@ -5,6 +5,8 @@ class Person {
     var name: String = "Jon";
     var age : Int = 18;
 
+
+
 }
 
 fun main(args: Array<String>) {
