@@ -39,4 +39,6 @@ fun reverse2(list: List<Int>): List<Int>{
 
 
 
+
+
 }
