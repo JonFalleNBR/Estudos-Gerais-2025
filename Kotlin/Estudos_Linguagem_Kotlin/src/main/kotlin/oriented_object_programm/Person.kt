@@ -1,6 +1,8 @@
 package oriented_object_programm
 
-class Person {
+ class Person{// construtor primário com parametros - não é obrigatório, mas é uma boa prática
+// Essa caracteristica é diferente de outras linguagens como Java, onde o construtor é separado da classe
+
 
     var name: String = "Jon";
     var age : Int = 28;
@@ -44,8 +46,9 @@ fun getYearofBirthDay() = 2025 - age;
 
 }
 
+
 fun main(args: Array<String>) {
-    val person = Person()
+    val person = Person() // criando um objeto da classe Person com os parametros do construtor primário")
     //println("Name: ${person.name}, Age: ${person.age}")
 
 
