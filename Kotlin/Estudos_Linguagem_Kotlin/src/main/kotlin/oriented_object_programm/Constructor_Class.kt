@@ -21,42 +21,18 @@ class Vehicle(model: String, color: String)
     }
 
 
-
-
-    /*
-No java
-
-    public class Vehicle{
-        public string modelo ;
-        public string cor ;
-
-
-        public Vehicle(String modelo, String cor){
-            this.modelo = modelo;
-            this.cor = cor;
-            System.out.println("Veiculo criado com modelo: " + modelo + " e cor: " + cor);
-        }
-
-    }
-
-
-    Kotlin de maneira mais enxuta ainda
-
-    class Vehicle(var model: String, var color: String) {
-    init {
-        println("Vehicle created with model: $model and color: $color")
-    }
-
-
-}
-
-    */
     // Os objetos ja tem Getters and Setters por padrão, não é necessário declarar - e podem ser acessados diretamente por qualquer metodo da classe
     fun Modelito(): String {
 
       val mensagem =  "\nO Modelo é : $model"
         println(mensagem)
         return mensagem
+    }
+
+    //exemplo de metodo com parametro
+    fun greet(model: String){
+        this.model = model
+        println("\nHello World, $model") //agora esta apontando o model do construtor primario para o model do metodo
     }
 
 }
@@ -71,5 +47,37 @@ val vehicle = Vehicle("Civic", "Red")
     // vehicle.model = "Civic"
     // vehicle.color = "Red"
      println("Model: ${vehicle.model}, Color: ${vehicle.color}")
+    vehicle.greet("Palio")
 
 }
+
+
+
+/*
+No java
+
+public class Vehicle{
+    public string modelo ;
+    public string cor ;
+
+
+    public Vehicle(String modelo, String cor){
+        this.modelo = modelo;
+        this.cor = cor;
+        System.out.println("Veiculo criado com modelo: " + modelo + " e cor: " + cor);
+    }
+
+}
+
+
+Kotlin de maneira mais enxuta ainda
+
+class Vehicle(var model: String, var color: String) {
+init {
+    println("Vehicle created with model: $model and color: $color")
+}
+
+
+}
+
+*/
