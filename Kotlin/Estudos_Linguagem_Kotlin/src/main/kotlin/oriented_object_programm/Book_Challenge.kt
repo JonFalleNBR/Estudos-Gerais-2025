@@ -10,11 +10,14 @@ class Book_Challenge {
 
     var publication_year: Int = 1900
 
+    var author = "Default Author Name"
+
     var borrowed : Boolean = false
 
     init{
         this.name = name
         this.publication_year = publication_year
+        this.author = author
         this.borrowed = borrowed
 
     }
@@ -47,29 +50,34 @@ class Book_Challenge {
 
             }
 
-
-
         }
-        val result = "Book Name: $name, Publication Year: $publication_year, Borrowed Status: $borrowed"
-        println(result)
-        return result;
-    }
 
-    // metodo que verifica se o livro está emprestado ou não
-    fun isBorrowed(): String {
-        var message: String = ""
         print("Enter the name of the book to check its status: ")
         name = readln() ?: "Default Book Name"
 
-        if (borrowed){
-             message = "The book '$name' is currently borrowed."
-
-        }else {
-             message = "The book '$name' is available for borrowing."
+        if (borrowed) {
+            println("The book '$name' is currently borrowed.")
+        } else {
+            println("The book '$name' is available for borrowing.")
         }
-        val result = "$message Publication Year: $publication_year"
+
+        val info = getBookInfo()
+        return info;
+    }
+
+
+    fun getBookInfo(): String {
+
+        val result =
+            "\nBook Name: $name," +
+                    "\n Publication Year: $publication_year," +
+                    "\n Autor: $author," +
+                    "\n Borrowed Status: $borrowed"
+
+        println(result)
         return result
     }
+
 
 }
 
@@ -85,5 +93,4 @@ fun main (args: Array<String>) {
     // Chamando o metodo para emprestar o livro
     book.borrowedBook()
     // Verificando se o livro está emprestado ou não
-    val status = book.isBorrowed();
 }
