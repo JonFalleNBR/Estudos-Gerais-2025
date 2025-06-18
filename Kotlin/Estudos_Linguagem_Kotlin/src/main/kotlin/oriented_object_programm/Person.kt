@@ -41,20 +41,23 @@ package oriented_object_programm
      //  return 2025 - age
      //}
 
-/*
+
 fun getYearofBirthDay() = 2025 - age;
     // função de uma linha, sem o return, mas com o tipo definido - mesma de cima, mas mais elegante ja que o tratamento é mais simples
 
 
 }
 
-
-*/
- }
 // ------ classes Student e Employee - Herança em Kotlin ------
-class Student(override val name: String,override var age:Int): Person(name, age){
+class Student(override val name: String,override var age:Int, val studentID: Long ): Person(name, age){
     // sobre Open Classes and Inheritance - Herança em Kotlin
     // override indica que estamos sobrescrevendo o construtor primário da classe Person - que esta declarado com open na classe mãe
+    // A classe Student herda as propriedades e métodos da classe Person, e pode adicionar ou modificar comportamentos específicos
+
+    init {
+        println("Student created: Name = $name, Age = $age, Student ID = $studentID")
+    }
+
 }
 // A classe Student e Employee herdam as propriedades e métodos da classe Person, e pode adicionar ou modificar comportamentos específicos
 class Employee(override val name: String,override var age: Int): Person(name, age){
@@ -67,6 +70,12 @@ fun main(args: Array<String>) {
     //println("Name: ${person.name}, Age: ${person.age}")
 
 
-    val student = Student("John", 22); // criando um objeto da classe Student com os parametros do construtor primário
+    val student = Student("John", 22, 1234); // criando um objeto da classe Student com os parametros do construtor primário
     student.speak() // chamando o método speak da classe Person
+
+    val employee = Employee("Jane", 30); // criando um objeto da classe Employee com os parametros do construtor primário
+
+    employee.greet("Jane") // chamando o método greet da classe Person
+
+    employee.getYearofBirthDay()
 }
