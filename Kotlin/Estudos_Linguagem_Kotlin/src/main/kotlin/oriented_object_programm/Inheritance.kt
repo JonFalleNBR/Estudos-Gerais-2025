@@ -23,7 +23,7 @@ open class Pessoa(open val nome: String, open val idade: Int) {
 
     fun anoNascimento(): Int{
         val anoNascimento: Int = 2025 - idade;
-        print("Eu nasci em $idade" +
+        print("Eu nasci em $anoNascimento" +
                 "\n")
         return anoNascimento
 
