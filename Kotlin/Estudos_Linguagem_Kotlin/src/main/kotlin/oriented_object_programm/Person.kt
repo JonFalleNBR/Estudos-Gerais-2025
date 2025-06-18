@@ -58,10 +58,16 @@ class Student(override val name: String,override var age:Int, val studentID: Lon
         println("Student created: Name = $name, Age = $age, Student ID = $studentID")
     }
 
+    fun isIntelligent() = true;
+
 }
 // A classe Student e Employee herdam as propriedades e métodos da classe Person, e pode adicionar ou modificar comportamentos específicos
 class Employee(override val name: String,override var age: Int): Person(name, age){
 
+    fun receivePayment(){
+        println("\nPayment received")
+
+    }
 
 }
 
@@ -73,9 +79,11 @@ fun main(args: Array<String>) {
     val student = Student("John", 22, 1234); // criando um objeto da classe Student com os parametros do construtor primário
     student.speak() // chamando o método speak da classe Person
 
+    student.isIntelligent()
+
     val employee = Employee("Jane", 30); // criando um objeto da classe Employee com os parametros do construtor primário
 
-    employee.greet("Jane") // chamando o método greet da classe Person
-
     employee.getYearofBirthDay()
+
+    employee.receivePayment()
 }
