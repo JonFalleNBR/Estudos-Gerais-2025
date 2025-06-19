@@ -1,16 +1,18 @@
 package oriented_object_programm
 
-open class Pessoa(open val nome: String, open val idade: Int) {
+abstract class Pessoa(open val nome: String, open val idade: Int) {
 
+    // abstract class Pessoa é uma classe abstrata, ou seja, não pode ser instanciada diretamente - mas configura como uma
+    // classe base para outras classes que herdam dela, como Aluno - e ´por padrão já possui o modificador open
     init{
         println("Pessoa criada: Nome = $nome, Idade = &idade" +
                 "\n")
 
     }
-    fun falar(){
-        println("Ola meu nome é $nome e tenho $idade anos.")
+    abstract fun falar()
+       // println("Ola meu nome é $nome e tenho $idade anos.")
 
-    }
+
 
     fun cumprimentar(): String{
         val message = "Ola $nome, tudo bem ?"
@@ -32,7 +34,7 @@ open class Pessoa(open val nome: String, open val idade: Int) {
 
 }
 
-class Aluno(override val nome: String, override var idade:Int, val nota: Double): Pessoa(nome, idade){
+ class Aluno(override val nome: String, override var idade:Int, val nota: Double): Pessoa(nome, idade){
 
     fun CalculaNota(nota1: Double, nota2: Double, nota3: Double): Double{
         val media = (nota1 + nota2 + nota3) / 3
@@ -49,8 +51,36 @@ class Aluno(override val nome: String, override var idade:Int, val nota: Double)
 
     }
 
+     override fun falar() {
+            val message = "Olá, meu nome é $nome e tenho $idade anos. Minha nota é %.2f".format(nota)
+            println(message)
+
+            // Chama o método cumprimentar da classe base Pessoa
+            cumprimentar()
+
+     }
+
+
 }
 
+class Funcionario(override val nome: String, override var idade:Int, val salario: Double): Pessoa(nome, idade) {
+
+    fun calcularSalarioAnual(): Double {
+        val salarioAnual = salario * 12
+        println("O salario anual de $nome é R$%.2f".format(salarioAnual) + "\n")
+        return salarioAnual
+
+    }
+
+    override fun falar(){
+        val message = "Olá, meu nome é $nome e tenho $idade anos. Meu salário é R$%.2f".format(salario)
+        println(message)
+
+        // Chama o método cumprimentar da classe base Pessoa
+        cumprimentar()
+
+    }
+}
 
 fun main(args: Array<String>){
 
@@ -61,5 +91,10 @@ fun main(args: Array<String>){
     aluno.anoNascimento()
     aluno.CalculaNota(8.0, 9.0, 7.5)
 
+
+
+    val funcionario = Funcionario("Maria", 30, 2500.00)
+    funcionario.falar()
+    funcionario.calcularSalarioAnual()
 
 }
