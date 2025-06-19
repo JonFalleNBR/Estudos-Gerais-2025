@@ -11,7 +11,7 @@ abstract class Pessoa(open val nome: String, open val idade: Int) {
     }
     abstract fun falar()
        // println("Ola meu nome é $nome e tenho $idade anos.")
-
+    // método abstrato que deve ser implementado pelas classes filhas, como Aluno e Funcionario não tem corpo de implementação proprio
 
 
     fun cumprimentar(): String{
