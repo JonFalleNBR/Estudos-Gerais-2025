@@ -1,15 +1,12 @@
 package oriented_object_programm
 
-abstract class Course(val topic: String, val price: Double){
+abstract class Course(val topic: String, val price: Double) {
 
-    open fun learn(){
+    open fun learn() {
         println("Learning in the $topic Course")
 
     }
-
-
 }
-
 interface Learnable{
     fun learn(){
         println("Learning...")
