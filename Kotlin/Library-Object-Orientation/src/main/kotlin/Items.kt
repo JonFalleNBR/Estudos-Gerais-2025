@@ -1,6 +1,6 @@
 import java.util.Date
 
-class Book(title: String, author: String) : InventoryItem( title, author,  "Horror", 1990) {
+class Book(title: String, author: String, genre: String, publicationYear: Int) : InventoryItem( title, author,  genre, publicationYear) {
 
     override fun getItemDetails(): String {
 
@@ -11,7 +11,7 @@ class Book(title: String, author: String) : InventoryItem( title, author,  "Horr
 }
 
 
-class DVD(title: String, val director: String) : InventoryItem(title, director, "Horror", 1990) {
+class DVD(title: String, val director: String, genre: String, releaseYear: Int) : InventoryItem(title, director, genre, releaseYear) {
 
     override fun getItemDetails(): String {
         return "Title: $title, Director: $director, Genre: $genre, Release Year: ${publicationYear}";

@@ -2,10 +2,11 @@
 
 abstract class InventoryItem( val title: String , val author: String, val genre: String, val publicationYear: Int) : Lendable {
 
-override var message: String = "..."
+    override var message: String = "..."
     override var isBorrowed: Boolean = false
 
     abstract fun getItemDetails(): String
+
 
 
     override fun borrow(): String {
@@ -14,14 +15,14 @@ override var message: String = "..."
 
         */
 
-        print("Welcome to the Book Borrowing System!\n");
+        print("Welcome to the Item Borrowing System!\n");
 
 
-        print("Enter the name of the book to check its status: ")
+        print("Enter the name of the Item to check its status: ")
         val itemName = readln()
 
         if (isBorrowed){
-            println("The Book or DVD $itemName is already borrowed.")
+            println("The Item $itemName is already borrowed.")
 
 
         }else{
@@ -51,9 +52,6 @@ override var message: String = "..."
 
 
                 }
-
-
-
 
         return message;
     }
