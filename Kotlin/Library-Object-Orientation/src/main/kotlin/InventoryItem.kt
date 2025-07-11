@@ -7,8 +7,6 @@ abstract class InventoryItem( val title: String , val creator: String, val genre
 
     abstract fun getItemDetails(): String
 
-
-
     override fun borrow(): String {
         print("=== Welcome to the Item Borrowing System! ====\n");
 
@@ -52,4 +50,4 @@ abstract class InventoryItem( val title: String , val creator: String, val genre
     }
 
 
-    }
+}

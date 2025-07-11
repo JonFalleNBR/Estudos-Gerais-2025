@@ -6,10 +6,10 @@ import kotlin.system.exitProcess
 fun main(args: Array<String>){
 
     val inventory = listOf(
-        Book("Harry Potter", "J.K. Rowling", "Fantasia", 1996),
-        Book("O Hobbit", "J.R.R. Tolkien", "Fantasia", 1937),
-        DVD("Matrix", "Lana Wachowski", "Sci-Fi", 1999),
-        DVD("Gladiador", "Ridley Scott", "Ação", 2000)
+        Book("Harry Potter", "J.K. Rowling", "Fantasia", 1996, 400),
+        Book("O Hobbit", "J.R.R. Tolkien", "Fantasia", 1937, 310),
+        DVD("Matrix", "Lana Wachowski", "Sci-Fi", 1999, 136.0),
+        DVD("Gladiador", "Ridley Scott", "Ação", 2000, 155.0)
     )
 
 
