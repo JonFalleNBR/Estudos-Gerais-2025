@@ -10,24 +10,19 @@ abstract class InventoryItem( val title: String , val author: String, val genre:
 
 
     override fun borrow(): String {
-        /*
-       Enquanto não estiver com isBorrowed = true , o loop de irá seguir com a logica a ser implementada
-
-        */
-
-        print("Welcome to the Item Borrowing System!\n");
+        print("=== Welcome to the Item Borrowing System! ====\n");
 
 
-        print("Enter the name of the Item to check its status: ")
-        val itemName = readln()
+        print("verificando a disponibilidade do item ${title}...\n")
+
 
         if (isBorrowed){
-            println("The Item $itemName is already borrowed.")
+            println("The Item $title is already borrowed.")
 
 
         }else{
-            println("The Book $itemName is available for borrowing.")
-            println("Do you like to borrow the book $itemName? (yes/no)")
+            println("The Item $title is available for borrowing.")
+            println("Do you like to borrow the item $title? (yes/no)")
             val response = readln().lowercase();
                if (response == "yes"){
                    message = "The item " + getItemDetails() + " was borrowed successfully!";
