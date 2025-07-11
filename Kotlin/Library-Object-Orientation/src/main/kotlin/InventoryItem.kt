@@ -1,4 +1,5 @@
-
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 abstract class InventoryItem( val title: String , val creator: String, val genre: String, val publicationYear: Int) : Lendable {
 
@@ -23,7 +24,11 @@ abstract class InventoryItem( val title: String , val creator: String, val genre
             println("Do you like to borrow the item $title? (yes/no)")
             val response = readln().lowercase();
                if (response == "yes"){
-                   message = "🎉 O item ${getItemDetails()} foi emprestado com sucesso!"
+                   var dias = LocalDateTime.now().plusDays(4);
+                   val formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy 'às' HH:mm")
+                   val formattedReturnDate = dias.format(formatter)
+                   message =  "🎉 O item ${getItemDetails()} foi emprestado com sucesso!\n" +
+                           "📅 Data de devolução: $formattedReturnDate"
                    isBorrowed = true;
                    println(message);
                    return message;
