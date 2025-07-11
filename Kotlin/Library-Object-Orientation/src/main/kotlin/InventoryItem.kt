@@ -1,6 +1,6 @@
 
 
-abstract class InventoryItem( val title: String , val author: String, val genre: String, val publicationYear: Int) : Lendable {
+abstract class InventoryItem( val title: String , val creator: String, val genre: String, val publicationYear: Int) : Lendable {
 
     override var message: String = "..."
     override var isBorrowed: Boolean = false
@@ -13,7 +13,7 @@ abstract class InventoryItem( val title: String , val author: String, val genre:
         print("=== Welcome to the Item Borrowing System! ====\n");
 
 
-        print("verificando a disponibilidade do item ${title}...\n")
+        println("verificando a disponibilidade do item ${title}...")
 
 
         if (isBorrowed){
@@ -25,7 +25,7 @@ abstract class InventoryItem( val title: String , val author: String, val genre:
             println("Do you like to borrow the item $title? (yes/no)")
             val response = readln().lowercase();
                if (response == "yes"){
-                   message = "The item " + getItemDetails() + " was borrowed successfully!";
+                   message = "🎉 O item ${getItemDetails()} foi emprestado com sucesso!"
                    isBorrowed = true;
                    println(message);
                    return message;
