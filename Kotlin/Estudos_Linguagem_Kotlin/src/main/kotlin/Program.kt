@@ -127,6 +127,7 @@ fun main() {
 
     var mensagem: String? = null;
 
+
     mensagem!!.length
 // Exception in thread "main" java.lang.NullPointerException
         }
