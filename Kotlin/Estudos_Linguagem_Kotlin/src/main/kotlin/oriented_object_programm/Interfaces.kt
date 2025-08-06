@@ -20,7 +20,7 @@ interface Buildable{
 }
 
 
-class Car(val color: String): Driveable, Buildable{
+class Car(val color: Color): Driveable, Buildable{
 
         override val timeRequired = 120 // tempo necessário para construir o carro, implementando a interface Buildable
 
@@ -52,8 +52,13 @@ class Motorcycle(val color: String): Driveable, Buildable{
 
 }
 
+
 fun main(args: Array<String>){
-    val car = Car("Red")
+
+    // Color() é um exemplo de uma classe Color criada para exemplificar um exemplo de ENUM da aula 46 como  boa pratica
+
+    val car = Car(Color.BLUE) // criando um carro com a cor azul, usando a classe Color
+    println("The Color of car is  ${car.color}" + "\n") // imprimindo a cor do carro
 
     car.drive()  // chama o metodo drive da classe Car que implementa a interface Driveable para o carro
 
