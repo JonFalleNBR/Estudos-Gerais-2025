@@ -1,8 +1,8 @@
 package oriented_object_programm
 
-enum class Color {
+enum class Color(val rgb: Int) {
 
-    RED , GREEN, BLUE, YELLOW;
+    RED(0xFF0000) , GREEN(0x00FF00), BLUE(0x0000FF), YELLOW (0xFFFF00), BLACK(0x000000), WHITE(0xFFFFFF);
 
     // Enum é uma classe especial que define um conjunto fixo de constantes, neste caso, as cores - AULA 46
 
