@@ -30,6 +30,11 @@ class Pilha<T>(vararg  items: T){
 
 }
 
+// vararg significa que posso colcoar quantos elementos eu quiser como parametro, e eles serão tratados como um array dentro da função
+fun   <E>PilhaOf(vararg elements: E ): Pilha<E>{
+    return Pilha(*elements)
+  //* é um operador de espalhamento (spread operator) que permite passar os elementos do array como argumentos separados para a função PilhaOf
+}
 
 fun main() {
     val pilha = Pilha(1,2,3,4)
@@ -41,6 +46,12 @@ fun main() {
     println(pilha.pop())
     println(pilha.pop()) // tenta remover um elemento de uma pilha vazia, retornando null
 
+
+    val pilha2 = PilhaOf("A", "B", "C", "D") // usando a função PilhaOf para criar uma pilha de Strings
+    for(i in 1..4){
+        println(pilha2.pop())
+
+    }
 
 
 }
