@@ -3,8 +3,10 @@ package oriented_object_programm
 
 
 // DRY -> não repetir código, encapsulando a lógica de pilha em uma classe
-    class Stack<E>{
+class Stack<E>(vararg items : E){
 
+
+        val elements = items.toMutableList()
 
 /*
     Com essa logica eu defino uma classe como um tipi generico e posso usar qualquer tipo de dado como
@@ -28,16 +30,28 @@ package oriented_object_programm
     Isso garante a não repetição de codigo
 
  */
-        fun push(item: E){
-            val array = arrayOf(1,2,3,);
+        fun push(element: E) {
+            elements.add(element)
+        }
+
+        fun pop(): E?{
+                if(!isEmpty()){
+                    return elements.removeAt(elements.size - 1);
+
+
+                }
+            return null;
+
 
         }
 
-        fun pop(){
+
+    fun isEmpty(): Boolean {
+        return isEmpty();
 
 
-        }
 
+    }
 
     }
 
