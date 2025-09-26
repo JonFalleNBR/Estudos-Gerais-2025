@@ -21,6 +21,7 @@ public class Main {
         if (lineE.length != N || lineS.length != N) {
             System.out.println("Entrada inválida");
             return;
+
         }
 
 
