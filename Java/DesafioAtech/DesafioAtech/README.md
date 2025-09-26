@@ -1,3 +1,10 @@
+Foi utilizado Java 17 para essa solução.
+Maven e estrutura de pom.xml para gerenciar dependencias e recursos da aplicacao.
+JUnit 4 foi utilizado para testes unitários.
+E por fim Inteligencia Artificial com ChatGPT 5 na refatoracao, tirar duvidas e em busca de otimização do código.
+
+
+Enunciado
 TESTE DE AVALIAÇÃO TÉCNICA DE
 PROGRAMADOR DE SOFTWARE –
 
@@ -69,6 +76,3 @@ MANUTENÇÃO
    linguagem de programação de sua preferência.
 
 
-Foi utilizado Java 17 para essa solução.
-JUnit 5 foi utilizado para os testes unitários.
-E por fim Inteligencia Artificial com ChatGPT 5 na refatoracao em busca de otimização do código.
