@@ -70,4 +70,5 @@ MANUTENÇÃO
 
 
 Foi utilizado Java 17 para essa solução.
-E Inteligencia Artificial na refatoracao em busca de otimização do código.
+JUnit 5 foi utilizado para os testes unitários.
+E por fim Inteligencia Artificial com ChatGPT 5 na refatoracao em busca de otimização do código.
