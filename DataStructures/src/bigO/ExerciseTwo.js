@@ -23,4 +23,8 @@ function anotherFunChallenge(input) {
  identify quickly the complexity of the code, but in general, we should say that the
   time complexity of this code is O(n) because the time of execution of the code is defined 
  by the loops and the size of the input, and not by the constants.
+
+ In this case -> O(4 + 5n) -> O(n) because we ignore the constants and the predominant 
+ factor is n, that is the size of the input
+  and the number of times that we have to execute the loops.
 */
