@@ -23,4 +23,7 @@ Answering questions
     2 - what is the time complexity of this code ? In general, the time execution of this code is O(n), once the complexity is measured by the loop and is conducted by the size of the input, but we can also say that the time of this code is O(n3) 
     because we have 3 lines with    O(n) time complexity, but we can ignore the constant and say that the time complexity of this code is O(n) because we only care about the big O notation and not the constants.
     3 - and why... due the fact that the BigO always considers the major factor of the code, and in this case, the major fact in this case is defined by the loop. 
-*/ 
+
+    The complexity of this code is O(n)
+
+    */ 

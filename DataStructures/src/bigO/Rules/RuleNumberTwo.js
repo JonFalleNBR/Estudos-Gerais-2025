@@ -1,3 +1,5 @@
+// RULE -> Drop the Constants
+
 function printFirstItemThenFirstHalfThenSayHi100Times(items) {
     console.log(items[0]); // O(1) look for thge first item
 

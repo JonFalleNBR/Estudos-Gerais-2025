@@ -1,3 +1,5 @@
+// RULE -> Consider the Worst Case Scenario
+
 const name = "Rule One";
 
 function findTheLetter(name){
@@ -8,8 +10,6 @@ function findTheLetter(name){
             break
         }
     }
-
-
 }
 
 findTheLetter(name);
