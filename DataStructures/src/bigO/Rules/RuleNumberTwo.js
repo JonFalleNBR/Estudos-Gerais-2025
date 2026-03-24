@@ -1,5 +1,5 @@
 function printFirstItemThenFirstHalfThenSayHi100Times(items) {
-    console.log(items[0]); 
+    console.log(items[0]); // O(1) look for thge first item
 
     var middleIndex = Math.floor(items.length / 2);
     var index = 0;
@@ -10,8 +10,8 @@ function printFirstItemThenFirstHalfThenSayHi100Times(items) {
     }
 
     for(var i = 0; i < 100; i++){
-        console.log(' hi ') // O(100) 
-    }
+        console.log(' hi ') // O(100) or O(1) because we should ignore the constants   
+    } 
 }
 
 /* 
