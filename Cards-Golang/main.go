@@ -1,22 +1,7 @@
 package main
 
-import "fmt"
-
 func main() {
 
-	cards := []string{newCard(), newCard(), "Ace of Spades"}
-	cards = append(cards, "Six of Spades") // append adds a new element to the end of the slice and returns the updated slice
-
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
-}
-
-func newCard() string {
-	return "Five of Diamonds"
-}
-
-func deckSize() int {
-
-	return 53
+	cards := newDeck() // aqui estamos criando uma nova variável chamada cards, que é do tipo deck, e estamos atribuindo a ela o valor retornado pela função newDeck(), que é um slice de strings com as cartas do baralho.
+	cards.print()      // chama o metodo print() do tipo deck, que imprime cada carta na tela
 }
