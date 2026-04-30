@@ -1,3 +1,5 @@
+// Rule number four - Drop the non-dominant terms
+
 const numbers = [1, 2, 3, 4, 5];
 
 function printAllNumbersThenTheirPairs(numbers) {

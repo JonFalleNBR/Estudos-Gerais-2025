@@ -2,7 +2,7 @@ const boxes = ["a", "b", "c", "d", "e"];
 
 function logAllPairsOfArray(array) {
   for (let i = 0; i < array.length; i++) {
-    for (let j = 0; j < array.length; j++) {
+    for (let j = 0; j < array.length; j++) { // The point where we have a nested Loop, and get a quadratic time complexity, or an O(n^2) time complexity, because we have two loops that depend on the size of the input, and we have to execute it n times for each loop, so we have n * n = n^2 operations.
       console.log(array[i], array[j]);
     }
   }

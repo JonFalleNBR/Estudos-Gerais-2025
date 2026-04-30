@@ -1,4 +1,4 @@
-//Rule -> consider the independets terms - different inputs
+//Rule 3 -> consider the independets terms - different inputs
 
 function compressBoxesTwice(boxes, boxes2) {
   boxes.forEach(function (boxes) {
@@ -8,7 +8,7 @@ function compressBoxesTwice(boxes, boxes2) {
   boxes2.forEach(function (boxes) {
     console.log(boxes);
   });
-}
+} // O(n + m)
 
 
 /*
