@@ -11,6 +11,15 @@ function findNemo(aLot) {
   }
 }
 
+
+const findNemo2 = array => {
+  array.forEach((fish, i) => {
+     if(fish === 'nemo'){
+       console.log("Founded at the position" + i);
+     }
+  })
+}
+
 // const boxes = [0, 1, 2, 3, 4, 5]
 
 // function grabFirstPosition(boxes){
