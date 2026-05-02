@@ -46,3 +46,25 @@
 Here we got a time complexity of O(n) and a Space Complexity of O(1) because we`re using a constant amount of space    
 
   */ 
+
+
+ // Now lets find the total of Tweets as part of our learning  
+
+ function getTotalTweets(tweets){
+    let total = 0; 
+
+    // better way to do this  
+
+    for(let i = 0; i <tweets.length; i++){ // O(n)
+        console.log(tweets[i].tweet +  
+            "date: " + tweets[i].date
+        ); 
+        total++;
+    }
+    console.log("There are " + total + " tweets made between " + tweets[0].date + " and " + tweets[tweets.length - 1].date);
+    return total;
+ }
+
+
+
+ getTotalTweets(tweets); // O(1) because we`re using a constant amount of space, we`re not using any additional space to store the total of tweets, we`re just using a variable to store the total of tweets, so the space complexity is O(1) because we`re using a constant amount of space, and the time complexity is O(1) because we`re just returning the length of the array of tweets, so the time complexity is O(1) because we`re just returning a value, we`re not doing any operations on the array of tweets, so the time complexity is O(1) because we`re just returning a value.
