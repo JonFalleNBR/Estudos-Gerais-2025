@@ -23,9 +23,7 @@ arrayOfHiNTimes(6); // O(n) because we have to create an array of
 // of the input.
 
 /* 
-
     The Space time complexity is defined by 
     the size of the input and the amount of the space that we 
     use
-
 */
