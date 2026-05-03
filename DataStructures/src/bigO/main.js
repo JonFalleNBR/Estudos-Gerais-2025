@@ -23,7 +23,7 @@ const findNemo2 = array => {
 const findNemo3 = array => {
   for(let fish of array){ // O(n)
     if(fish === 'nemo'){
-      console.log("Founded at the position" + array.indexOf(fish));
+      console.log("Founded at the position" + array.indexOf(fish)); //O(n^2) because indexOf is also O(n) inside the Loop
   }
   }
 }
