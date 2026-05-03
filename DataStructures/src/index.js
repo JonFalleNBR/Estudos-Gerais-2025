@@ -1,9 +1,9 @@
 // Data Structures Exercises
 // =========================
 
-const { LinkedList } = require('./linked-list');
-const { Stack } = require('./stack');
-const { Queue } = require('./queue');
+const { LinkedList } = require('./linked-list/main');
+const { Stack } = require('./stack/main');
+const { Queue } = require('./queue/main');
 
 console.log('=== Data Structures ===\n');
 
